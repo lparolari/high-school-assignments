@@ -1,0 +1,123 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+    
+    \title{Biblioteca\\ \large Esercizio di Programmazione}
+    \date{Dicembre 2019}
+    
+    \maketitle
+    
+    Leggere attentamente la consegna e svolgere l'esercizio rispettando il più possibile le specifiche date per quanto riguarda i metodi della classe e i tipi di dato in gioco.
+    
+    \section{Consegna}
+    Si vuole realizzare un software per la gestione di una piccola biblioteca. Il software dovrà permettere all'utente di inserire nuovi libri nella biblioteca e cercarli per autore.
+    
+    Si progetti una classe \texttt{Libro} che permetta di memorizzare in modo privato le informazioni sul titolo, l'autore e l'anno di pubblicazione del libro. Il costruttore della classe obbliga l'utente ad inserire tutte le informazioni sul libro. Inoltre, la classe \texttt{Libro} espone i metodi \texttt{nome()}, \texttt{autore()} e \texttt{anno()} che restituiscono i rispettivi campi dato, mentre non sono forniti metodi per la modifica delle informazioni del libro. Si aggiunga anche un metodo \texttt{to\textunderscore string()} che restituisce una stringa composta da \texttt{NOME\textunderscore LIBRO, AUTORE, ANNO} del libro.
+    
+    Si progetti una classe \texttt{Biblioteca} che permette di memorizzare in modo privato un array di libri. La classe fornisce il metodo \texttt{aggiungi(Libro l)} che consente di aggiungere un nuovo libro alla biblioteca (lo inserisce nell'array), un metodo \texttt{vedi()} che stampa a video tutti i libri nella biblioteca e un metodo \texttt{cerca(string autore)} che stampa a video il \emph{primo} risultato che coincide con la ricerca.
+    
+    \section{Dettagli implementativi}
+    Si utilizzino tutti gli strumenti forniti dal C++ 11. Potranno essere utili le seguenti astrazioni ed operazioni.
+    \begin{itemize}
+    	\item \texttt{vector}: astrazione dell'array. Utilizzabile come in C, ma fornisce in più metodi come \texttt{push\textunderscore back} per l'inserimento di elementi in coda. Non necessita di una dimensione fissata. Istanziare il vettore come un array di libri, ad esempio
+\begin{verbatim}
+vector<Libro> v;
+v.push_back(l); // l è un libro
+\end{verbatim}
+
+		\item \texttt{string}: astrazione sulle stringhe. Tornerà utile il metodo \texttt{find(string s)} (documentazione \href{http://www.cplusplus.com/reference/string/string/find/}{http://www.cplusplus.com/reference/string/string/find/}); ad esempio
+\begin{verbatim}
+if (l.autore().find(autore_da_cercare) != string::npos) {
+    // la stringa `autore_da_cercare` è una sottostringa del valore
+    // ritornato dal metodo `autore()` chiamato sul libro.
+}
+\end{verbatim}
+
+		\item \emph{foreach}, un costrutto che permette di iterare su tutti gli elementi dell'array, ad esempio
+\begin{verbatim}
+// v è un vettore di libri
+for (Libro l : v) {
+    // utilizzo l (oggetto di tipo Libro)
+    cout << l.to_string() << endl;
+}
+\end{verbatim}
+    \end{itemize}
+    
+    
+    \section{Esempi di utilizzo}
+    
+\begin{lstlisting}[style=mycppbox]
+int main() {
+    Libro l1("C++. Linguaggio, libreria standard, principi di programmazione", "Bjarne Stroustrup", 2015);
+    Libro l2("Clean Code: A Handbook of Agile Software Craftsmanship", "Robert C. Martin", 2008);
+    Libro l3("Programming in Haskell", "Graham Hutton", 2016);
+
+    Biblioteca b;
+
+    b.aggiungi(l1);
+    b.aggiungi(l2);
+    b.aggiungi(l3);
+
+    cout << "BIBLIOTECA" << endl;
+    b.vedi();
+    cout << endl;
+
+    cout << "CERCA UN LIBRO" << endl;
+    b.cerca("Graham");
+    b.cerca("o");
+    b.cerca("Pippo");
+
+    return 0;
+}
+
+/* **************************************
+   OUTPUT
+   **************************************
+
+BIBLIOTECA
+C++. Linguaggio, libreria standard, principi di programmazione, Bjarne Stroustrup, 2015
+Clean Code: A Handbook of Agile Software Craftsmanship, Robert C. Martin, 2008
+Programming in Haskell, Graham Hutton, 2016
+
+CERCA UN LIBRO
+Programming in Haskell, Graham Hutton, 2016
+C++. Linguaggio, libreria standard, principi di programmazione, Bjarne Stroustrup, 2015
+
+*/
+\end{lstlisting}
+    
+\end{document}
