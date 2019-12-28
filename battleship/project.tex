@@ -1,0 +1,57 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{authblk}
+\usepackage{enumerate}
+\usepackage[
+backend=biber,
+style=numeric,
+citestyle=numeric  % numeric, alphabetic
+]{biblatex}                  % bib management. %bibtex
+
+\author{
+	Luca Parolari\thanks{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+\title{Battaglia Navale}
+\date{Novembre 2019}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section{Obiettivo}
+	
+	Scrivere in linguaggio C++ un programma che simula il famoso gioco da tavolo \emph{battaglia navale}. 
+	
+	Il programma si compone di un menù che permette all'utente di scegliere le azioni da eseguire tra
+	\begin{itemize}
+		\item posiziona navi giocatore 1
+		\item posiziona navi giocatore 2
+		\item gioca
+		\item termina il programma
+	\end{itemize}
+	
+	Il tavolo di gioco per battaglia navale è una griglia 10x10 dove le etichette delle colonne sono le lettere $A, B, \ldots, J$ e le etichette delle righe sono i numeri $1, 2, \ldots, 10$.
+	
+	L'azione di posizionamento delle navi dei giocatori consente appunto agli stessi di posizionare le navi sulla propria griglia. Il programma deve controllare che le navi siano posizionate in modo che non siano sovrapposte e solo in orizzontale e verticale.
+	
+	Il numero di navi e la dimensione sono fissati: per esempio 2 navi di dimensione 2, due di dimensione 3, una di dimensione 4 ed una di dimensione 5. (Opzionale: permettere all'utente di modificare questi parametri, scegliendo lunghezza e numero di navi con cui giocare).
+	
+	L'azione \emph{gioca} inizia il gioco, permettendo ad uno dei giocatori di scegliere una coordinata dalla griglia del giocatore opposto da colpire. Il giocatore viene notificato del successo o del fallimento dell'azione mostrando la griglia con una \texttt{'x'} in caso di nave colpita o di \texttt{'o'} in caso di ``acqua''. Il turno viene passato all'altro giocatore che svolge le stesse operazioni. Se uno dei due giocatori affonda una nave le \texttt{'x'} utilizzate per evidenziare la nave colpita diventano \texttt{'-'}, di modo da rendere esplicito l'affondamento.
+
+\end{document}
