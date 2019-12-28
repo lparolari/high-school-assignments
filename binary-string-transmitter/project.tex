@@ -1,0 +1,151 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{authblk}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage[
+backend=biber,
+style=numeric,
+citestyle=numeric  % numeric, alphabetic
+]{biblatex}                  % bib management. %bibtex
+
+\author{
+	Luca Parolari\thanks{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+\title{Binary String Transmitter}
+\date{Novembre 2019}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section{Obiettivo}
+	
+	Scrivere in linguaggio C++ un encoder/decoder di stringhe binarie. Il programma si compone di un menu dal quale l'utente può scegliere quale operazione eseguire tra
+	\begin{itemize}
+		\item codifica di una sequenza di caratteri,
+		\item decodifica di una sequanza binaria, e
+		\item uscita dal programma.
+	\end{itemize}
+	
+	L'azione \textit{codifica di una sequenza di caratteri} legge da standard input (la console) una stringa (lunghezza max 100 caratteri) e ne fa la codifica binaria. La codifica binaria di una stringa è ottenibile trasformando ogni carattere che compone la stringa nel numero intero corrispondente in tabella ASCII. (a questo link è possibile consultare la tabella ASCII: \href{https://www.asciitable.it/}{https://www.asciitable.it/}). Per esempio, il carattere \texttt{'A'} corrisponde al numero $65$, mentre il carattere \texttt{'a'} corrisponde al numero $97$. 
+	
+	A questo punto, una volta ottenuto il numero intero che rappresenta il carattere dato in input è sufficiente codificare l'intero in una sequenza di 8 bit (un byte). Ad esempio il numero $97$ in base $10$ corrisponde al numero $1100001$ in base $2$. L'algoritmo da applicare quello riportato in Tabella \ref{table_binary_algo}
+	\begin{table}
+		\centering
+		\begin{tabular}{llll}
+			Dividendo & Divisore  & Quoziente & Resto \\
+			\hline
+			97 & 2 & 48 & 1 \\
+			48 & 2 & 24 & 0 \\
+			24 & 2 & 12 & 0 \\
+			12 & 2 & 6 & 0 \\
+			6  & 2 & 3 & 0 \\
+			3  & 2 & 1 & 1 \\
+			1  & 2 & 0 & 1 \\    
+		\end{tabular}
+		\label{table_binary_algo}
+		\caption{Algoritmo per la codifica binaria}
+	\end{table}
+	Una volta ottenuti i resti della divisione per due, vanno letti dal basso verso l'alto per avere il numero binario corrispondente.
+	
+	L'azione \textit{decodifica di una sequenza binaria} svolge proprio l'azione opposta della codifica.
+	
+	L'azione \textit{esci} termina il programma.
+	
+	\section{Dettagli implementativi}
+	
+	\noindent Per ottenere da un carattere la relativa codifica intera usare i cast del C, ovvero
+	\begin{lstlisting}[language=C++,xleftmargin=+\leftmargini]
+	char c = 'A';      // c = 'A'
+	int n = (int)c;    // n = 97
+	\end{lstlisting}
+	mentre per ottenere da un numero la codifica in carattere (stampabile) utilizzare
+	\begin{lstlisting}[language=C++,xleftmargin=+\leftmargini]
+	int n = 97;        // n = 97
+	char c = (char)n;  // c = 'A'
+	\end{lstlisting}
+	
+	\noindent Realizzare \textbf{obbligatoriamente} la funzione
+	\begin{lstlisting}[language=C++,xleftmargin=+\leftmargini]
+	void stampa_bin(char bin[], int n)
+	\end{lstlisting}
+	che prende in input un array rappresentante una sequenza di numeri binari ed $n$ la sua lunghezza e stampa a video la sequenza binaria.
+	
+	\noindent Realizzare \textbf{obbligatoriamente} le seguenti funzioni.
+	\begin{itemize}
+		\item \verb|void int_to_bin(int n, char bin[])|, che prende in input un intero $n$ e un array $bin$ di 8 caratteri e scrive la codifica binaria di $n$ in $bin$. Attenzione, se il numero codificato in binario dovesse essere lungo meno di 8 caratteri aggiungere tanti zeri quanto basta all'inizio del numero per renderlo lungo 8 caratteri.
+		\item \verb|int bin_to_int(char bin[])| che prende in input un array $bin$ di 8 caratteri rappresentante una codifica in binario, ne effettua la decodifica e la restituisce come un numero intero.
+	\end{itemize}
+	Esempi di utilizzo
+	\begin{lstlisting}[language=C++,xleftmargin=+\leftmargini]
+	// spazio di memoria per la codifica binaria
+	char bin[8];
+	
+	// codifica del numero 97 in bin
+	int_to_bin(97, bin);
+	
+	// bin contiene 01100001
+	\end{lstlisting}
+	
+	\noindent Realizzare anche una funzione 
+	\begin{lstlisting}[language=C++,xleftmargin=+\leftmargini]
+	int appendi_codifica(char seq_binaria[], int n, char byte[])
+	\end{lstlisting}
+	che prende in input una codifica binaria, la sua lunghezza $n$ e un byte da inserire nell'array della codifica e, modifica $seq\textunderscore binaria$ appendendo $byte$ alla fine dell'array (ovvero copiando le 8 celle di byte nell'array con la codifica completa) e restituisce la nuova lunghezze della codifica (ovvero $n+8$).
+	
+	\pagebreak
+	
+	\section{Esempio}
+	
+	\begin{verbatim}
+	Benvenuto!
+	Menu (binary string transmitter)
+	1) codifica una stringa
+	2) decodifica una sequenza di bit
+	3) esci
+	scegli un'opzione: 1
+	Stringa da codificare: Ciao, Mondo!
+	11000010100101101000011011110110001101000000010010110010
+	1111011001110110001001101111011010000100
+	
+	Menu (binary string transmitter)
+	...
+	scegli un'opzione: 1
+	Stringa da codificare: abc
+	100001100100011011000110
+	
+	Menu (binary string transmitter)
+	...
+	scegli un'opzione: 2
+	Stringa da decodificare: 100001100100011011000110
+	abc
+	
+	Menu (binary string transmitter)
+	...
+	scegli un'opzione: 4
+	Azione non supportata
+	
+	Menu (binary string transmitter)
+	...
+	scegli un'opzione: 3
+	Arrivederci!
+	\end{verbatim}
+	
+\end{document}

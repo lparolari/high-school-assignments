@@ -1,0 +1,62 @@
+%%% CONFIGURATIONS FOR EXERCISE
+% Customized by Luca Parolari
+% luca.parolari23@gmail.com
+
+%% tikz: flowchart
+\usetikzlibrary{shapes,arrows,arrows.meta}
+\tikzset{%
+	>={Latex[width=2mm,length=2mm]},
+	% Specifications for style of nodes:
+	base/.style = {rectangle, rounded corners, draw=black,
+		minimum width=4cm, minimum height=1cm,
+		text centered, font=\sffamily},
+	cloud/.style = {draw, ellipse, fill=white},%red!20},
+	decision/.style = {diamond, draw, fill=white},%blue!20},
+	process/.style = {base, minimum width=2.5cm, fill=white,%blue!20,
+		font=\ttfamily},
+}
+
+%% lstlisting
+\lstset{autogobble=true}
+
+\lstdefinestyle{mycpp}{
+	basicstyle=\ttfamily,
+	breaklines=true,
+	%captionpos=b,                    % sets the caption-position to bottom
+	%deletekeywords={...},            % if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	frame=l,                    % adds a frame around the code
+	%keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	language=C++,
+	%morekeywords={*,...},            % if you want to add more keywords to the set
+	numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=5pt,                   % how far the line-numbers are from the code
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+}
+
+\lstdefinestyle{mycppbox}{
+	basicstyle=\ttfamily,
+	breaklines=true,
+	%captionpos=b,                    % sets the caption-position to bottom
+	%deletekeywords={...},            % if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	frame=single,                    % adds a frame around the code
+	%keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	language=C++,
+	%morekeywords={*,...},            % if you want to add more keywords to the set
+	numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=5pt,                   % how far the line-numbers are from the code
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+}
+
+\lstdefinestyle{verbatim}{
+	basicstyle=\ttfamily,
+	columns=fixed,
+	fontadjust=true,
+	basewidth=0.5em,
+	escapechar=\%
+}
