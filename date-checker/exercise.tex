@@ -1,0 +1,78 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+    
+    \title{Esercizio di Programmazione\\ \large Date Checker}
+    \date{Data}
+    
+    \maketitle
+    
+    Leggere attentamente la consegna e svolgere l'esercizio.
+    
+    \section{Consegna}
+    Scrivere un programma che legge da std input una data, \texttt{g m a}, e controlla che si tratti di una data corretta. In particolare, il programma controlla che il giorno sia in accordo con il mese, tenendo anche conto degli anni bisestili. (Si ricorda che, in un anno bisestile, febbraio ha 29 giorni e che un anno è bisestile se l'anno è divisibile per 4, con l'eccezione degli anni secolari che non siano divisibili per 400).
+    
+    \section{Esempi di utilizzo}
+    Input sottolineato.
+    
+    \begin{itemize}
+    	\item 
+			\begin{lstlisting}[style=verbatim]
+			Immetti la data: %\underline{9 12 2010}%
+			Data corretta
+			\end{lstlisting}
+			
+		\item 
+			\begin{lstlisting}[style=verbatim]
+			Immetti la data: %\underline{30 2 2012}%
+			Data errata
+			\end{lstlisting}		
+			
+		\item
+			\begin{lstlisting}[style=verbatim]
+			Immetti la data: %\underline{2 30 2015}%
+			Data errata
+			\end{lstlisting}
+			
+		\item
+			\begin{lstlisting}[style=verbatim]
+			Immetti la data: %\underline{29 2 2012}%
+			Data corretta
+			\end{lstlisting}
+    \end{itemize}
+    
+\end{document}

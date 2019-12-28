@@ -1,0 +1,31 @@
+### latex compile output
+*.pdf
+*.ps
+*.dvi
+
+### latex aux files
+*.toc
+*.aux
+*.log
+*.synctex.gz
+*.out
+
+### latex bib
+*.bbl
+*.bcf
+*.blg
+*.fdb*
+*.fls
+
+### others latex
+*.run.xml
+*.bak
+*.mtc
+*.mtc*
+*.maf
+*.listing
+*.loa
+*.lof
+
+### emacs backups
+*~
