@@ -5,21 +5,24 @@ TODO: make this description better.
 ## Contents
 
 - Imperative programming
-  - [date-checker](Date Checker)
-  - [print-rectangle](Print Rectangle)
-  - [second-grade-eq](Second Grade Equations)
-  - [weighted-average](Weighted Average)
-  - [search-date](Search Date)
-  - [strings-array](Strings Array)
-  - [dynamic-array](Dynamic Array)
-  - [file-splitter](File Splitter)
+
+  - [Date Checker](date-checker)
+  - [Print Rectangle](print-rectangle)
+  - [Second Grade Equations](second-grade-eq)
+  - [Weighted Average](weighted-average)
+  - [Search Date](search-date)
+  - [Strings Array](strings-array)
+  - [Dynamic Array](dynamic-array)
+  - [File Splitter](file-splitter)
 
 - OOP programming
-  - [library](Library)
+
+  - [Library](library)
 
 - Projects
-  - [binary-string-transmitter](Binary String Transmitter)
-  - [battleship](Battleship)
+
+  - [Binary String Transmitter](binary-string-transmitter)
+  - [Battleship](battleship)
 
 ## Author
 
