@@ -1,0 +1,75 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+    
+    \title{Separa File}
+    \date{Gennaio 2020}
+    
+    \maketitle
+    
+    Leggere attentamente la consegna e svolgere l'esercizio.
+    
+    \section{Consegna}
+    
+    Sia $S$ il tipo di una struttura dati costituita da due campi $c1$ e $c2$, rispettivamente di tipo intero e di tipo reale. Scrivere un programma che legge da un file, il cui nome è dato in input dall'utente, una sequenza di coppie, numero intero numero reale, e memorizza ciascuna coppia in un array $T$ di elementi di tipo $S$ (dimensione massima 1000). Quindi, per ogni dato in $T$, memorizza il valore del campo $c1$ ed il valore del campo $c2$ in due file di output distinti, i cui nomi sono ottenuti da quello di input facendolo precedere, rispettivamente, dalle stringhe \verb|campi1_di_| e \verb|campi2_di_| (ad es., se il nome del file di input è \texttt{dati.txt}, i nomi dei file di output saranno \verb|campi1_di_dati.txt| e \verb|campi2_di_dati.txt|). Si richiede di controllare l'esistenza del file di input ed in caso negativo di terminare il programma con un opportuno messaggio d'errore. Si supponga che il nome del file di input sia una stringa qualsiasi (contente anche spazi), di lunghezza massima 100. 
+    
+    \emph{Hint.} Utilizzare soltanto stringhe ``tipo C''.
+    
+    \section{Esempi di utilizzo}
+    
+    \noindent\textbf{File di input}: \texttt{dati.txt}
+	\begin{lstlisting}[style=verbatim]
+		1 2.4
+		3 4.0
+		5 6.1
+	\end{lstlisting}
+	
+	\noindent\textbf{File di output}: \verb|campo1_di_dati.txt|
+	\begin{lstlisting}[style=verbatim]
+		1
+		3
+		5
+	\end{lstlisting}
+	
+	\noindent\textbf{File di output}: \verb|campo1_di_dati.txt|
+	\begin{lstlisting}[style=verbatim]
+		2.4
+		4
+		6.1
+	\end{lstlisting}
+    
+\end{document}

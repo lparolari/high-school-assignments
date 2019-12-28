@@ -12,6 +12,7 @@ TODO: make this description better.
   - [search-date](Search Date)
   - [strings-array](Strings Array)
   - [dynamic-array](Dynamic Array)
+  - [file-splitter](File Splitter)
 
 - OOP programming
   - [library](Library)
