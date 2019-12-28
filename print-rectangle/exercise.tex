@@ -1,0 +1,71 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+    
+    \title{Stampa rettangolo}
+    \date{Dicembre 2019}
+    
+    \maketitle
+    
+    Leggere attentamente la consegna e svolgere l'esercizio.
+    
+    \section{Consegna}
+    
+    Scrivere un programma che stampi un rettangolo la cui cornice sia costituita da caratteri asterisco e la parte interna da un carattere immesso dall'utente. Il numero di righe e di colonne è specificato
+    dall'utente tramite standard input (accettare soltanto valori $> 0$).
+    
+    \section{Esempi di utilizzo}
+	\footnote{Input sottolineato.}
+
+	\begin{lstlisting}[style=verbatim]
+		Inserisci quante righe vuoi: %\underline{10}%
+		Inserisci quante colonne vuoi: %\underline{30}%
+		Inserisci il carattere che riempira' il rettangolo: %\underline{.}%
+		
+		******************************
+		*............................*
+		*............................*
+		*............................*
+		*............................*
+		*............................*
+		*............................*
+		*............................*
+		*............................*
+		******************************
+	\end{lstlisting}
+    
+\end{document}
