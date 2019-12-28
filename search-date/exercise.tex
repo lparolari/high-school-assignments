@@ -1,0 +1,55 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+    
+    \title{Ricerca Date}
+    \date{Febbraio 2019}
+    
+    \maketitle
+    
+    Leggere attentamente la consegna e svolgere l'esercizio.
+    
+    \section{Consegna}
+    
+    \begin{itemize}
+    	\item Sia \texttt{Data} un tipo \emph{struct} costituito da tre campi, $g, m, a$, di tipo \texttt{int}. Scrivere una funzione booleana di nome ricerca che, presi come suoi parametri un array $v$ di puntatori a \texttt{Data}, il numero $n$ di elementi in $v$ , ed una struttura d di tipo \texttt{Data}, restituisce \texttt{true} se $v$ contiene $d$, \texttt{false} altrimenti.
+    	\item Scrivere anche un main di prova che legge da standard input una sequenza di date (max 100), nel formato $g m a$, le memorizza una alla volta in un array $A$ di puntatori a \texttt{Data} e quindi verifica, utilizzando (obbligatoriamente) la funzione ricerca, se $A$ contiene la data \texttt{15/8/1994}. La lettura termina non appena viene letta una data con giorno 0.
+    \end{itemize}
+
+	\emph{Hint.} Memorizzare una data in $A$ significa allocare una nuova struttura Data per contenere la data letta e quindi memorizzare in $A$ il puntatore a questa struttura.
+    
+\end{document}
