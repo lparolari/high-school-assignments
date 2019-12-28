@@ -1,0 +1,50 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+    
+    \title{Titolo\\ \large Sottotitolo}
+    \date{Data}
+    
+    \maketitle
+    
+    Leggere attentamente la consegna e svolgere l'esercizio.
+    
+    \section{Consegna}
+    
+    Scrivere un programma che legge da un file di nome \texttt{dati.txt} una sequenza di numeri interi, la memorizza in un array dinamico $D$ di dimensione iniziale $10$; ordina l'array $D$ in senso crescente utilizzando una funzione \texttt{ordina} e quindi memorizza l'array ordinato sullo stesso file \texttt{dati.txt}. Nel caso in cui l'array $D$ non sia sufficiente a contenere i dati letti dal file, il programma provvede ad aumentare la capacità di $D$ utilizzando una funzione \texttt{raddoppia} che, presi come suoi parametri un array e la sua dimensione, raddoppia la dimensione dell'area riservata all'array.
+    
+\end{document}

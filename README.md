@@ -11,11 +11,12 @@ TODO: make this description better.
   - [weighted-average](Weighted Average)
   - [search-date](Search Date)
   - [strings-array](Strings Array)
+  - [dynamic-array](Dynamic Array)
 
 - OOP programming
   - [library](Library)
 
-- Progetti
+- Projects
   - [binary-string-transmitter](Binary String Transmitter)
   - [battleship](Battleship)
 
