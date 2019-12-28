@@ -1,0 +1,68 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+    
+    \title{Media Pesata}
+    \date{Dicembre 2019}
+    
+    \maketitle
+    
+    Leggere attentamente la consegna e svolgere l'esercizio.
+    
+    \section{Consegna}
+    Scrivere un programma che legge da std input una sequenza di voti (in trentesimi), ciascuno con i propri CFU, e quindi calcola e stampa la media pesata rispetto ai CFU. Il programma accetta soltanto voti compresi tra 18 e 30. L'immissione termina quando si inserisce un voto negativo.
+    
+    \textit{Hint.} si ricorda che la media pesata si calcola dividendo la somma dei numeri ottenuti dalla moltiplicazione di ciascun voto per i suoi CFU con la somma di tutti i CFU; ad es., $(27*6 + 22*12 + 18*9) / (6+12+9) = 21.7777)$.
+    
+    \section{Esempi di utilizzo}
+     \footnote{Input sottolineato.}
+	
+	\begin{lstlisting}[style=verbatim]
+	Immettere un voto (negativo per smettere): %\underline{27}%
+	Immettere i CFU del corso: %\underline{6}%
+	Immettere un voto (negativo per smettere): %\underline{32}%
+	Il voto deve essere compreso tra 18 e 30
+	Immettere un voto (negativo per smettere): %\underline{22}%
+	Immettere i CFU del corso: %\underline{12}%
+	Immettere un voto (negativo per smettere): %\underline{18}%
+	Immettere i CFU del corso: %\underline{9}%
+	Immettere un voto (negativo per smettere): %\underline{-1}%
+	Hai immesso 3 voti
+	La media pesata dei tuoi voti e': 21.7778
+	\end{lstlisting}
+    
+\end{document}
