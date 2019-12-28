@@ -1,0 +1,64 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+    
+    \title{Array di Stringhe}
+    \date{Gennaio 2020}
+    
+    \maketitle
+    
+    Leggere attentamente la consegna e svolgere l'esercizio.
+    
+    \section{Consegna}
+    
+    Scrivere un programma principale che legge da std input una sequenza di stringhe (ciascuna di lunghezza massima 100 cararatteri), fino a incontrare la stringa \texttt{"stop"}, e le memorizza una alla volta in un array $A$ di stringhe (dimensione massima 1000) nel modo seguente: per ogni stringa letta $x$, se $x$ non è ancora presente in $A$, alloca la memoria per la nuova stringa e aggiunge in fondo ad A il puntatore alla stringa allocata; se $x$ è già presente in $A$, aggiunge in fondo ad $A$ il puntatore alla stringa trovata (senza allocare nuova memoria per $x$).
+    Al termine il programma stampa il numero di stringhe diverse memorizzate in $A$ e la sequenza completa delle stringhe lette.
+    
+    \textit{Nota}. Utilizzare soltanto stringhe ``tipo C''.
+    
+    \section{Esempi di utilizzo}
+    \footnote{Input sottolineato.}
+    
+	\begin{lstlisting}[style=verbatim]
+		Dai una sequenza di stringhe ("stop" per smettere):
+		%\underline{il gatto mangia il topo ma il topo scappa stop}%
+		
+		Memorizzate 6 stringhe diverse
+		Sequenza: il gatto mangia il topo ma il topo scappa
+	\end{lstlisting}
+    
+\end{document}
