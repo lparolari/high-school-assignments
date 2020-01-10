@@ -1,0 +1,236 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+    
+    \title{Snake}
+    \date{Gennaio 2020}
+    
+    \maketitle
+    
+    Leggere attentamente la consegna e svolgere l'esercizio.
+    
+    \section{Prima versione}
+    
+  	Viene fornito un file con funzionalità di base da cui partire per l'implementazione della logica di Snake vero e proprio. (Vedere il capitolo \ref{ch_res}).
+    
+    \subsection{Consegna}
+    
+    La prima versione del gioco Snake, molto semplice, presenta le seguenti caratteristiche.
+    \begin{itemize}
+    	\item Una matrice rappresenta la mappa di gioco.
+    	\item Un carattere, ad esempio \texttt{@}, rappresenta la testa dello Snake (ovvero, lo Snake ha lunghezza 1).
+    	\item Lo Snake si muove per iterazioni successive: ad ogni iterazione viene mostrata la matrice all'utente, successivamente viene chiesto all'utente in che direzione tra destra, sinistra, su, giù muovere lo Snake (ad esempio, leggendo da standard input un carattere e facendo la mossa se esso corrisponde a uno tra \texttt{w}, \texttt{a}, \texttt{s}, \texttt{d}).
+    	\item Lo Snake muore se esce dalla mappa.
+    \end{itemize}
+
+
+	\subsection{Esempi di utilizzo}
+	\footnote{Input sottolineato.}
+	
+	\begin{lstlisting}[style=verbatim]
+		> ./a.out 
+		# # # # # # 
+		# @       #
+		#         #
+		#         #
+		#         #
+		# # # # # # 
+		
+		Prossima posizione: %\underline{s}%
+		# # # # # # 
+		#         #
+		# @       #
+		#         #
+		#         #
+		# # # # # # 
+		
+		Prossima posizione: %\underline{d}%
+		# # # # # # 
+		#         #
+		#   @     #
+		#         #
+		#         #
+		# # # # # # 
+		
+		Prossima posizione: %\underline{d}%
+		# # # # # # 
+		#         #
+		#     @   #
+		#         #
+		#         #
+		# # # # # #
+		
+		Prossima posizione: %\underline{d}%
+		# # # # # # 
+		#         #
+		#       @ #
+		#         #
+		#         #
+		# # # # # #  
+		
+		Prossima posizione: %\underline{d}%
+		Game over!
+	\end{lstlisting}
+
+	\section{Seconda versione}
+	
+	\subsection{Consegna}
+	
+	\begin{itemize}
+		\item Aggiungere ``l'effetto pacman'': se lo Snake sbatte contro un muro, esso ricompare dall'altra parte della mappa. Per esempio, lo Snake sbatte contro il muro a destra, la testa dello Snake ricompare sulla sinistra della mappa.
+	\end{itemize}
+    
+    \subsection{Esempi di utilizzo}
+    \footnote{Input sottolineato.}
+    
+	\begin{lstlisting}[style=verbatim]
+		> ./a.out 
+		# # # # # # 
+		# @       #
+		#         #
+		#         #
+		#         #
+		# # # # # # 
+		
+		Prossima posizione: %\underline{s}%
+		# # # # # # 
+		#         #
+		# @       #
+		#         #
+		#         #
+		# # # # # # 
+		
+		Prossima posizione: %\underline{d}%
+		# # # # # # 
+		#         #
+		#   @     #
+		#         #
+		#         #
+		# # # # # # 
+		
+		Prossima posizione: %\underline{d}%
+		# # # # # # 
+		#         #
+		#     @   #
+		#         #
+		#         #
+		# # # # # #
+		
+		Prossima posizione: %\underline{d}%
+		# # # # # # 
+		#         #
+		#       @ #
+		#         #
+		#         #
+		# # # # # #  
+		
+		Prossima posizione: %\underline{d}%
+		# # # # # # 
+		#         #
+		# @       #
+		#         #
+		#         #
+		# # # # # #  
+	\end{lstlisting}
+    
+    \section{Risorse}
+    \label{ch_res}
+    
+    \begin{lstlisting}[style=mycpp]
+	#include <iostream>
+		
+	using namespace std;
+		
+	const int R = 4;
+	const int C = 4;
+		
+	// Imposta il valore dell'elemento della matrice `A`
+	// in posizione `(i,j)` al valore di `c`.
+	void set(char A[], char c, int i, int j) {
+	    A[i * C + j] = c;
+	}
+		
+	// Restituisce l'elemento in posizione `(i,j)` della matrice `A`.
+	char get(char A[], int i, int j) {
+	    return A[i * C + j];
+	}
+		
+	// Disegna la matrice `A`.
+	void disegna(char A[]) {
+	    for (int i = 0; i < C + 2; i++) cout << "#" << " "; 
+	    cout << endl;
+	    for (int i = 0; i < R; i++) {
+	        cout << "#" << " ";
+	        for (int j = 0; j < C; j++) {
+	            cout << A[i * C + j] << " ";
+	        }
+	        cout << "#" << endl;
+	    }
+	    for (int i = 0; i < C + 2; i++) cout << "#" << " ";
+	    cout << endl;
+	}
+		
+	// Inizializza la matrice `A` con il carattere `c`.
+	void inizializza(char A[], char c) {
+	    for (int i = 0; i < R; i++) {
+	        for (int j = 0; j < C; j++) {
+	            set(A, c, i, j);
+	        }
+	    }
+	}
+
+	    // **************************************
+	int main() {
+	    char A[C * R];
+		
+	    inizializza(A, ' ');
+	    set(A, '@', 0, 0);
+		
+	    // DA FARE: animare la matrice e aggiornarla in base alla
+	    // direzione in cui l'utente desidera andare
+		
+	    // Hint: chiedere all'utente la direzione in cui muovere lo snake.
+	    //       Provare inizialmente muovendo uno snake di lunghezza 1.
+		
+	    disegna(A);
+		
+	    return 0;
+	}
+    
+    \end{lstlisting}
+    
+\end{document}
