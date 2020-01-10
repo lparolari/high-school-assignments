@@ -60,7 +60,7 @@ def trigger_build(dir) -> Tuple[bool, str]:
     retcode = proc.returncode
 
     if e == '':
-        logging.info(f'Build of "{dir}" has dine with return code {retcode}.')
+        logging.info(f'Build of "{dir}" has done with return code {retcode}.')
         logging.debug(f'Output: {o}')
         return (True, o)
     else:

@@ -6,14 +6,20 @@ TODO: make this description better.
 
 - Imperative programming
 
-  - [Date Checker](date-checker)
-  - [Print Rectangle](print-rectangle)
-  - [Second Grade Equations](second-grade-eq)
-  - [Weighted Average](weighted-average)
-  - [Search Date](search-date)
-  - [Strings Array](strings-array)
-  - [Dynamic Array](dynamic-array)
-  - [File Splitter](file-splitter)
+  - Base
+
+    - [Date Checker](date-checker)
+    - [Print Rectangle](print-rectangle)
+    - [Second Grade Equations](second-grade-eq)
+    - [Weighted Average](weighted-average)
+
+  - Array
+    - [Search Date](search-date)
+    - [Strings Array](strings-array)
+    - [Dynamic Array](dynamic-array)
+
+  - File
+    - [File Splitter](file-splitter)
 
 - OOP programming
 
