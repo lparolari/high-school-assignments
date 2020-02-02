@@ -1,2 +1,6 @@
 # emacs backup
 *~
+
+# dist & build
+*.out
+/.dist
