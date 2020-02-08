@@ -1,0 +1,65 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+\input{config.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+    
+    \title{Classe Persona}
+    \date{10/02/2020}
+    
+    \maketitle
+    
+    Leggere attentamente la consegna e svolgere l'esercizio.
+    
+    \section{Consegna}
+    Si realizzi la classe \texttt{Persona} in modo che permetta di memorizzare in modo privato le informazioni su nome, cognome ed età della persona. Le informazioni private possono essere impostate solamente tramite il costruttore della classe che appunto prenderà tre parametri per popolare i campi della classe.
+
+    Aggiungere poi un metodo pubblico \texttt{stampa()} che stampi a video le informazioni private della persona.
+
+    Scrivere un main che utilizzi la classe \texttt{Persona} creando due istanze di persona (esempio: Tizio Rossi, età 42 anni e Caio Bianchi, età 65 anni) e stampi a video tramite il metodo \texttt{stampa()} le informazioni dei due oggetti istanziati.
+
+    \textit{Nota}: per rendere l'esercizio più semplice, non è richiesto che l'utente debba inserire a mano nome, cognome ed età delle persone, è possibile scriverli direttamente nel codice del main. \`E comunque possibile estendere l'esercizio e aggiungere questa funzionalità. 
+
+   \section{Esempi di utilizzo}
+    
+	\begin{lstlisting}[style=verbatim]
+        > ./a.out
+
+        Tizio Rossi, 42 anni
+        Caio Bianchi, 65 anni
+	\end{lstlisting}
+    
+\end{document}
