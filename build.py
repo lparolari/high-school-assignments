@@ -130,10 +130,10 @@ def main(args, loglevel):
     for d in target_dirs:
         build_no += 1
         (build_ok, out) = trigger_build(d)
-        (copy_ok, out) = copy_dist(d)
+        (copy_ok, _) = copy_dist(d)
         if not build_ok:
             failed_no += 1
-            print(out)
+            # print(out)
             # TODO handle build failures
 
     print(
