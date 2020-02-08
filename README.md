@@ -45,9 +45,23 @@ TODO: make this description better.
   - [Binary String Transmitter](binary-string-transmitter)
   - [Battleship](battleship)
 
+## Contributing
+
+Pull requests are welcome, every contribute will build a better
+world for computer science teachers.
+
 ## Author
 
-Luca Parolari <<luca.parolari23@gmail.com>>
+Luca Parolari <<luca.parolari23@gmail.com>>. Computer Science teacher
+at Liceo Golgi of Breno, Italy.
+
+## Disclaimer
+
+> :warning: This repository is not intended to be a complete and
+> professional support to teachers. It is only a collection of some
+> exercises with solutions and eventually some notes. The repository
+> may (and probably is) full of imprecision and errors. Take this
+> as is.
 
 ## License
 
