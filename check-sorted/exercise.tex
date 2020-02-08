@@ -1,0 +1,76 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+\input{config.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+    
+    \title{Controllo Array Ordinato}
+    \date{Data}
+    
+    \maketitle
+    
+    Leggere attentamente la consegna e svolgere l'esercizio.
+    
+    \section{Consegna}
+    
+    Realizzare un programma in linguaggio C++ che riceve in input una sequenza di $N$ numeri interi, con $N$ dato da utente. I numeri sono memorizzati in un vettore, ed il vettore può contenere al massimo $30$ numeri. Terminato l’inserimento della sequenza di numeri, il programma deve svolgere le seguenti operazioni.
+    \begin{itemize}
+        \item \textbf{Verificare} se il vettore contiene una sequenza di numeri ordinata in modo crescente e mostrare un messaggio all'utente che indica lo stato dell'array;
+        \item \textbf{Rovesciare} il vettore nel caso esso sia ordinato in modo crescente. 
+    \end{itemize}
+    Le funzionalità elencate devono essere realizzate tramite funzioni apposite.
+    
+    \section{Esempi di utilizzo}
+    \footnote{Input sottolineato.}
+    
+    \noindent\textbf{Esempio}
+	\begin{lstlisting}[style=verbatim]
+        Quanti numeri vuoi inserire? %\underline{5}%
+        Dai i numeri: %\underline{4 3 9 8 7}%
+
+        La sequenza di numeri non %\`e% ordinata.
+	\end{lstlisting}
+
+    \noindent\textbf{Esempio}
+    \begin{lstlisting}[style=verbatim]
+        Quanti numeri vuoi inserire? %\underline{5}%
+        Dai i numeri: %\underline{4 4 5 8 17}%
+		
+        La sequenza di numeri %\`e% ordinata.
+        L'array rovesciato %\`e%: [17, 8, 5, 4, 4]
+	\end{lstlisting}
+    
+\end{document}
