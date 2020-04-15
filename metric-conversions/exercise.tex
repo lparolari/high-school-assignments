@@ -1,0 +1,101 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+\input{config.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+
+\title{Metric Conversions}
+\date{AS 2019-2020}
+
+\maketitle
+
+Leggere attentamente la consegna e svolgere l'esercizio.
+
+\section{Consegna}
+
+Progettare una classe \texttt{Converter} che ha il compito di convertire
+le unità di misura: metri a chilometri, celsius a fahrenheit, byte a
+kilobyte, eccetera.
+
+La classe Converter viene istanziata specificando il tipo di conversione,
+per esempio \texttt{Converter c1("metri\textunderscore kilometri")} oppure
+\texttt{Converter c2("celsius\textunderscore fahrenheit")}.
+
+La classe Converter offre un metodo \texttt{converti(numero)} che restituisce
+in base a quanto specificato il valore convertito.
+
+Per esempio:
+\begin{lstlisting}[style=mycpp]
+Converter c1("metri_kilometri");
+c1.converti(1000) // restituisce 1
+c1.converti(2000) // restituisce 2
+
+Converter c2("celsius_fahrenheit")
+c2.converti(20) // restituisce 68
+\end{lstlisting}
+
+Testare nel main i vari convertitori implementati.
+
+Provare ad estendere la classe per renderla il più generica possibile,
+ovvero: nel costruttore specificare la dimensione sulla quale convertire
+e nel metodo le unità di misura.
+
+Per esempio
+\begin{lstlisting}[style=mycpp]
+    Converter lunghezze("lunghezze");
+    lunghezze.converti("metri", "chilometri", 1000); // restituisce 1
+    lunghezze.converti("centimetri", "metri", 100); // restituisce 1
+    \end{lstlisting}
+
+Prendere esempio dal convertitore di google: \href{http://tiny.cc/cebokz}{http://tiny.cc/cebokz}
+
+\pagebreak
+
+\section{Estensione: Ereditarieta}
+\footnote{Estensione obbligatoria}
+
+Estendere l'esercizio precedente con l'ereditarietà: si definisca \texttt{Converter}
+come una classe astratta, indicando il prototipo del metodo \texttt{converti(...)}.
+Realizzare poi delle sottoclassi di \texttt{Converter} che implementino alcuni convertitori
+come quelli sulle unità di misura dell'esercizio precedente ma anche convertitori più
+generali come \texttt{DoubleConverter} che restituisce l'input raddoppiato,
+\texttt{SquareConverter} che restituisce $input^2$, eccetera.
+
+Modificare il main aggiungendo un vettore (o un array) di convertitori e dato un input
+(per es. numero intero) stampare a video tutte le conversioni dell'input date dai
+convertitori inseriti nel vettore.
+
+\end{document}
