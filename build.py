@@ -95,8 +95,8 @@ def copy_dist(dir) -> Tuple[bool, str]:
                 copy_list.append(os.path.join(root, file))
 
     for file in copy_list:
-        newdir = os.path.join(dist_folder, dir)
-        newfile = os.path.join(dist_folder, dir, os.path.basename(file))
+        newdir = os.path.join(dist_folder, os.path.dirname(file))
+        newfile = os.path.join(dist_folder, file)
         ensure_path(newdir)
         shutil.copy(file, newfile)
 
