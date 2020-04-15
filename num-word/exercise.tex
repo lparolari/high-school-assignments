@@ -1,0 +1,91 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+\input{config.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+
+\title{Num-Words}
+\date{AS 2019-2020}
+
+\maketitle
+
+Leggere attentamente la consegna e svolgere l'esercizio.
+
+\section{Consegna}
+
+Progettare e realizzare una funzione che dato un numero in input,
+stampa a video la sua rappresentazione in parola. La funzione può
+essere limitata solo a certi input: è possibile decidere di convertire
+solo numeri inferiori ad una certa soglia (e.g., $\leq 999999$).
+
+\begin{lstlisting}[style=mycpp]
+converti(1) // stampa "uno"
+converti(1167) // stampa "millecentosessantasette"
+\end{lstlisting}
+
+\'E possibile restituire il valore al posto che stamparlo a video se ritenuto più comodo.
+
+\textbf{Attenzione}: non è obbligatorio realizzare la funzione ricorsiva,
+ma potrebbe essere molto complicato trovarne una iterativa: si ragioni
+sulla struttura della soluzione.
+
+Per esempio, è possibile vedere la rappresentazione in lettere del numero 2822 come
+\begin{align*}
+     & \text{due} + \text{mila} + (\text{\textit{rappresentazione di 822}})                                               \\
+     & = \text{due} + \text{mila} + (\text{otto} + \text{cento} + \text{\textit{rappresentazione di 22}})                 \\
+     & = \text{due} + \text{mila} + (\text{otto} + \text{cento} + (\text{venti} + \text{\textit{rappresentazione di 2}})) \\
+     & = \text{due} + \text{mila} + (\text{otto} + \text{cento} + (\text{venti} + (\text{due})))
+\end{align*}
+
+Inoltre, bisogna prestare attenzione ai casi particolari, per esempio 1117 non è composto da
+$\text{uno} + \text{mila} + \text{\textit{rappresentazione di 117}}$, ma da
+$\text{mille} + \text{\textit{rappresentazione di 117}}$, così come 17 non è
+rappresentato da $\text{dieci} + \text{sette}$.
+
+Cercare quindi di trovare più regole possibili per evitare di
+riscrivere molte volte la stessa parte di codice.
+
+Realizzare infine un main che alcune conversioni, specialmente quelle più critiche.
+\'E possibile, opzionalmente, fornire interazione con l'utente chiedendo in input
+il numero da convertire.
+
+\section{Estensione*}
+
+Realizzare la funzione che svolge la conversione inversa rispetto a quella descritta sopra,
+ovvero prende in input una stringa che rappresenta un numero in parole e ne restituisce
+l'intero corrispondente.
+
+\end{document}
