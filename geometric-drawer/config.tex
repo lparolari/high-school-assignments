@@ -1,0 +1,84 @@
+%%% BASIC CONFIGS
+%
+% Basic latex configurations for `programming-exercise-template`
+% and `test-template`.
+% 
+% Luca Parolari (C) 2020
+% luca.parolari23@gmail.com
+
+%% ***************************************************************
+%  TIKZ
+%  ====
+\usetikzlibrary{shapes,arrows,arrows.meta}
+\tikzset{%
+	>={Latex[width=2mm,length=2mm]},
+	% Specifications for style of nodes:
+	base/.style = {rectangle, rounded corners, draw=black,
+		minimum width=4cm, minimum height=1cm,
+		text centered, font=\sffamily},
+	cloud/.style = {draw, ellipse, fill=white},%red!20},
+	decision/.style = {diamond, draw, fill=white},%blue!20},
+	process/.style = {base, minimum width=2.5cm, fill=white,%blue!20,
+		font=\ttfamily},
+}
+
+%% ***************************************************************
+%  SOLUTIONS
+%  =========
+\unframedsolutions          % disable frame
+
+%% ***************************************************************
+%  LSTLISTING
+%  ==========
+\lstset{
+    autogobble=true,                  % content left side
+    basicstyle=\ttfamily,             % font family
+    columns=fixed,                    % set column size (fixed=0.6em, flexible, fullflexible)
+    fontadjust=true,                  % adjust basewidth
+    basewidth=0.5em,                  % needed by `fontadjust`
+    %
+    breaklines=true,                  % break long lines
+    %
+    % line numbers
+    numbers=left,                     % where (none, left, right)
+    numbersep=5pt,                    % distance from code
+    numberstyle=\scriptsize,          % style
+    stepnumber=1,                     % step (every N line)
+    numberfirstline=true,             % first line
+    firstnumber=1,                    % first number
+    %
+    % escape
+    mathescape=true,
+    escapechar=\%,                    % set the escape char
+    showspaces=false,                 % show spaces, overrides `showstringspaces`
+	showstringspaces=false,           % show spaces within strings only
+	showtabs=false,                    % show tabs within strings only
+}
+
+%% *** useful for lstdefinestyle
+
+%% morekeywords={*,...},              % if you want to add more keywords to the set
+%% keepspaces=true,                   % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+%% deletekeywords={...},              % if you want to delete keywords from the given language
+%% captionpos=b,                      % sets the caption-position to bottom
+
+\lstdefinestyle{mycpp}{
+	escapeinside={\%*}{*)},           % escape latex code
+	frame=l,                          % add frame around the code
+	language=C++,                     % language
+}
+\lstdefinestyle{mycppbox}{
+	escapeinside={\%*}{*)},           % escape latex code
+	frame=single,                     % add frame around the code
+	language=C++,                     % language
+}
+\lstdefinestyle{verbatim}{
+	escapechar=\%,
+    numbers=none,
+}
+
+%% ***************************************************************
+%  EXAMPLE ENVIRONMENT
+%  ===================
+\newtheorem*{examplenon}{Example}
+\newtheorem{example}{Example}

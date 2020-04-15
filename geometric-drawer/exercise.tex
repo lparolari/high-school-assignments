@@ -1,0 +1,135 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+\input{config.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+    
+    \title{Geometric Drawer}
+    \date{30/03/2020}
+    
+    \maketitle
+    
+    Leggere attentamente la consegna e svolgere l'esercizio.
+    
+    \section{Consegna}
+    Si chiede di realizzare il seguente programma, che consente di disegnare sulla console un insieme predefinito di figure geometriche.
+
+    Il main, fornito in allegato alla consegna ed estendibile, crea alcune figure che memorizza in un array e successivamente, scorrendo l'array stampa invoca sulle figure il metodo \texttt{draw()}, per disegnarle.
+
+    Si noti che viene sfruttato il polimorfismo, che consente alle figure di essere figure specializzate (es. Linee, Cerchi, Rettangoli, ...) e quindi con possibilità di essere concretamente disegnate.
+
+    Realizzare di conseguenza le seguenti classi:
+    \begin{itemize}
+        \item \texttt{Figure}\footnote{Attenzione: la parola è scritta in inglese e ha la lettera F maiuscola.}, che rappresenta l'interfaccia di tutte le figure che il nostro programma sa disegnare. La classe offre un unico metodo astratto puro (ovvero \texttt{virtual} e senza implementazione (\texttt{= 0})) che restituisce \texttt{void}.
+
+        \item \texttt{Circle}, che rappresenta un cerchio. La classe mette a disposizione un costruttore che prende in input \texttt{x} e \texttt{y} le coordinate del centro del cerchio, ed il raggio. Questa classe deve implementare in modo corretto il metodo \texttt{draw()} per disegnare a video il cerchio.\\
+        \textbf{Attenzione:} la classe deve ereditare le proprietà dell'interfaccia \texttt{Figure}.
+
+        \item \texttt{HorizontalSegment}, che rappresenta un segmento orizzontale. La classe mette a disposizione un costruttore che prende in input \texttt{x} e \texttt{y} le coordinate che rappresentano l'inizio del segmento, e la sua lunghezza. Questa classe deve implementare in modo corretto il metodo \texttt{draw()} per disegnare a video il segmento.\\
+        \textbf{Attenzione:} la classe deve ereditare le proprietà dell'interfaccia \texttt{Figure}.
+    \end{itemize}
+
+    \vspace*{1em}
+
+    \textbf{Suggerimento}: si veda la console come un piano cartesiano, in cui l'asse y è comunemente orientato da sinistra a destra, mentre l'asse x è orientato dall'alto verso il basso. L'origine degli assi è considerata, per ogni figura, come il primo spazio disponibile in alto a sinistra nella console.
+
+    \vspace*{1em}
+
+    \textbf{Suggerimento}: per disegnare il cerchio pieno (vedi allegato), si utilizzi la disequazione $(x-x_c)^2 + (y-y_c)^2 \leq r^2$ dove $x_c, y_c$ sono le coordinate del centro del cerchio e $r$ è il raggio del cerchio, che identifica l'area interna del cerchio. Quindi, se si sostituisce un punto di coordinate $i$ e $j$ ad $x$ e $y$ nella disequazione precedente ed essa risulta vera allora il punto è da disegnare, altrimenti inserire della spaziatura.
+
+    \vspace*{1em}
+
+    \textbf{Suggerimento}: per mantenere le proporzioni delle figure è necessario aumentare lo spazio tra i caratteri stampati sull'asse y. Ad esempio, se si vuole stampare un punto per rappresentare una linea, non stampare solamente asterisco (\texttt{cout << "*"}), stampare un asterisco seguito da uno spazio (\texttt{cout << "* "}). Questo torna utile soprattutto per disegnare il cerchio.
+    
+    \section{Esempi}
+    
+	\begin{lstlisting}[style=verbatim]
+        > ./a.out
+                      *               
+                * * * * * * *         
+              * * * * * * * * *       
+            * * * * * * * * * * *     
+          * * * * * * * * * * * * *   
+          * * * * * * * * * * * * *   
+          * * * * * * * * * * * * *   
+        * * * * * * * * * * * * * * * 
+          * * * * * * * * * * * * *   
+          * * * * * * * * * * * * *   
+          * * * * * * * * * * * * *   
+            * * * * * * * * * * *     
+              * * * * * * * * *       
+                * * * * * * *         
+                      *               
+        ------------------------
+        * * * * * * * * 
+        * * * * * * *   
+        * * * * * * *   
+        * * * * * * *   
+        * * * * * *     
+        * * * * *       
+        * * * *         
+        *               
+        ------------------------
+        
+          * * * * * 
+        ------------------------
+	\end{lstlisting}
+    
+    \section{Allegati}
+
+    \subsection{Main}
+
+    \begin{lstlisting}[style=mycpp]
+        int main() {
+            Circle* c1 = new Circle(7, 7, 7);
+            Circle* c2 = new Circle(0, 0, 7);
+            HorizontalSegment* s1 = new HorizontalSegment(1, 1, 5);
+        
+            vector<Figure*> ff;
+            ff.push_back(c1);
+            ff.push_back(c2);
+            ff.push_back(s1);
+        
+            for (Figure* f : ff) {
+                f->draw();
+                cout << "-------------------------------------------------" << endl;
+            }
+        
+            return 0;
+        }
+    \end{lstlisting}
+
+\end{document}
