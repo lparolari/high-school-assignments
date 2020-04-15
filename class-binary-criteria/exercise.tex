@@ -1,0 +1,75 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+\input{config.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+    
+    \title{Classe Criterio Binario}
+    \date{AS 2019-2020}
+    
+    \maketitle
+    
+    Leggere attentamente la consegna e svolgere l'esercizio.
+    
+    \section{Consegna}
+
+    Progettare una classe \texttt{CriterioBinario} che viene costruita prendendo in input una stringa che rappresenta un operatore binario e un numero, ad esempio \texttt{CriterioBinario c("<", 3)}. Se l'operatore binario non è supportato, il criterio risulta sempre falso.
+
+    La classe \texttt{CriterioBinario} mette a disposizione un metodo \texttt{vale(numero)} che restituisce vero o falso se il criterio memorizzato vale sul numero dato in input.
+
+    Ad esempio:
+    \begin{lstlisting}[style=mycpp]
+    CriterioBinario criterio("==", 5);
+    criterio.vale(7) // restituisce false perche 7 != 5
+    criterio.vale(5) // restituisce true perche 5 == 5
+    \end{lstlisting}
+  
+    Scrivere poi due funzione esterne alla classe CriterioBinario, dove
+    \begin{itemize}
+        \item la prima prende in input un criterio ed un array di numeri e verifica se il criterio vale su tutti i numeri dell'array
+        \item la seconda prende in input un criterio ed un array di numeri e verifica se il criterio vale su almeno un numero dell'array
+    \end{itemize}
+
+    Testare le funzioni realizzate nel main, ad esempio
+    \begin{lstlisting}[style=mycpp]
+    int arrayInteri[] = {1,2,3,4,5,6,7,8};
+    CriterioBinario minoreDi3("<", 3);
+    
+    tuttiVeri(minoreDi3, arrayInteri) // restituisce false
+    unoVero(minoreDi3, arrayInteri) // restituisce vero
+    \end{lstlisting}
+    
+\end{document}

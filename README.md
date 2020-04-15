@@ -37,7 +37,8 @@ TODO: make this description better.
 - OOP programming
 
   - [Library](library)
-  - [Class Matrix](class-matrix)
+  - [Matrix](class-matrix)
+  - [Binary Criteria](class-binary-criteria)
 
 - Projects
 
@@ -65,4 +66,4 @@ at Liceo Golgi of Breno, Italy.
 
 ## License
 
-See LICENSE file.
+See [LICENSE](LICENSE) file.
