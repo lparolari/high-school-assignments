@@ -33,12 +33,20 @@ TODO: make this description better.
     - [Galton Machine](galton-machine)
     - [Smallest Multiple](smallest-multiple)
     - [Big Integer](big-integer)
+    - [Thousandth Pair Primes](thousandth-pair-primes)
+
+  - Recursion
+    - [Num Word](num-word)
 
 - OOP programming
 
-  - [Library](library)
-  - [Matrix](class-matrix)
-  - [Binary Criteria](class-binary-criteria)
+  - [Person](person-oop)
+  - [Library](library-oop)
+  - [Matrix](matrix-oop)
+  - [Strongbox](strongbox-oop)
+  - [Binary Criteria](binary-criteria-oop) (also with inheritance)
+  - [Metric Conversion](metric-conversions-oop) (also with inheritance)
+  - [Geometric Drawer](geometric-drawer-oop) (inheritance)
 
 - Projects
 
