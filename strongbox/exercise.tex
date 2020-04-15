@@ -1,0 +1,107 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+\input{config.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+
+\title{Cassaforte}
+\date{AS 2019-2020}
+
+\maketitle
+
+Leggere attentamente la consegna e svolgere l'esercizio.
+
+\section{Consegna}
+Progettare e scrivere un programma che simula il comportamento di una cassaforte.
+
+La cassaforte, rappresentata da una classe, deve essere costruita di modo che possa avere
+uno stato interno impostato alla creazione dell'oggetto. In particolare la cassaforte
+memorizza una \textit{password} (cifrata con un algoritmo anche molto semplice) e
+un \textit{segreto} che rappresentata il contenuto della cassaforte. Inoltre la
+cassaforte può trovarsi in stato bloccato o sbloccato.
+
+La cassaforte presenta anche una serie di metodi per l'interazione:
+\begin{itemize}
+    \item \texttt{sblocca(pwd)}, sblocca la cassaforte controllando che la password fornita sia la stessa di quella impostata
+    \item \texttt{blocca()}, blocca la password
+    \item \texttt{segreto()}, restituisce (o stampa) il segreto a video, ma solo se la cassaforte è stata sbloccata con la password corretta
+    \item \texttt{cambiaSegreto(nuovoSegreto)}, cambia il segreto custodito nella cassaforte
+    \item \texttt{cambiaPassword(nuovaPwd)}, cambia la password solo se la cassaforte è sbloccata
+\end{itemize}
+
+Realizzare un main interattivo tramite il quale l'utente può interagire con la cassaforte.
+La cassaforte iniziale è costruita con dei valodi di default arbitrariamente scelti dal programmatore.
+
+\newpage
+
+\section{Esempi di utilizzo}
+\footnote{Input sottolineato.}
+
+\begin{lstlisting}[style=verbatim]
+> ./a.out
+Operazioni disponibili: [
+    1=sblocca, 
+    2=blocca,
+    3=segreto,
+    4=cambia segreto,
+    5=cambia pw,
+    0=esci ]
+
+Scegli un'operazione: %\underline{1}%
+Inserisci password: %\underline{test}%
+Password errata, riprovare
+
+Scegli un'operazione: %\underline{1}% 
+Inserisci password: %\underline{admin}%
+Cassaforte sbloccata
+
+Scegli un'operazione: %\underline{3}%
+Ecco il segreto: il mio tessoro
+
+Scegli un'operazione: %\underline{2}%
+Cassaforte bloccata
+
+Scegli un'operazione: %\underline{4}%
+Devi prima sbloccare la cassaforte
+
+Scegli un'operazione: %\underline{5}%
+Devi prima sbloccare la cassaforte
+
+Scegli un'operazione: %\underline{0}%
+Arrivederci
+\end{lstlisting}
+
+\end{document}
