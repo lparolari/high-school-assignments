@@ -1,0 +1,66 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+\input{config.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+    
+    \title{Optional Int\\ \large Tipo di Dato Astratto}
+    \date{Maggio 2020}
+    
+    \maketitle
+    
+    Leggere attentamente la consegna e svolgere l'esercizio.
+    
+    \section{Consegna}
+
+    Realizzare il tipo di dato astratto ``intero opzionale'' che codifica il significato di successo o fallimento durante una computazione. In particolare, se la computazione ha successo il tipo di dato astratto rappresenta internamento un intero, se invece la computazione non ha successo viene memorizzato internamente un valore stringa con un breve messaggio dell'errore.
+
+    Questo tipo di dato può essere utilizzato ad esempio durante la ricerca di un numero in un array di interi data una certa condizione: se la ricerca ha successo ed il numero viene trovato, allora si restituisce l'oggetto opzionale con il valore intero ed un indicatore di successo, se il numero non viene trovato invece si restituisce l'oggetto opzionale con un indicatore di fallimento e la descrizione dell'errore.
+
+    Il tipo di dato astratto \texttt{optional\textunderscore int} deve fornire le seguenti operazioni:
+    \begin{itemize}
+        \item \texttt{make\textunderscore optional(int)}, che costruisce e restituisce un intero opzionale popolando la componente di successo;
+        \item \texttt{make\textunderscore optional(string)}, che costruisce e restituisce un intero opzionale popolando la componente di errore;
+        \item \texttt{use(optional\textunderscore int)}, che stampa a video l'intero memorizzato nell'optional oppure l'errore in base allo stato interno.
+    \end{itemize}
+    
+    Scrivere nel main qualche semplice test per provare l'effettività delle funzioni elencate sopra, indicando risultato atteso e risultato ottenuto.
+
+    Successivamente, anche in un altro file, scrivere un programma che dato un array $A$ effettua la ricerca di un numero multiplo di 3\footnote{Se ritenuto più comodo, servirsi della classe \texttt{vector}.}. La ricerca deve essere codificata tramite una funzione che ha come tipo di ritorno proprio \texttt{optional\textunderscore int}. Se la ricerca del multiplo di 3 ha successo la suddetta funzione restituisce un \texttt{optional\textunderscore int} con valore 3 e flag di successo, altrimenti un messaggio di errore \emph{elemento non trovato} e il flag di errore. Al main non rimane che ``utilizzare'' con la funzione \texttt{use(optional\textunderscore int)} l'intero opzionale ritornato. 
+
+    Invocare poi nel main questa funzione, testando diversi array in input.
+    
+\end{document}

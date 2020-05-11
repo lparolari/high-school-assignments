@@ -27,6 +27,7 @@ TODO: make this description better.
   - Struct
 
     - [Football Betting](football-betting)
+    - [ADT Optional Int](optional-int-adt--struct)
 
   - Math
 
