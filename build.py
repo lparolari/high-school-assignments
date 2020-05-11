@@ -10,6 +10,7 @@ from pprint import pprint
 import fileinput
 from typing import Tuple
 import dryable
+from distutils.dir_util import copy_tree
 
 
 # the make pdf command to fire.
@@ -87,18 +88,37 @@ def copy_dist(dir) -> Tuple[bool, str]:
 
     logging.info(f'Copying dist from "{dir}" to {dist_folder}.')
 
+    conventional_dirs = ["exercise", "solution"]
+
+    # Note: when *Weak Conventions* are not followed (see README.md) the scripts copies only
+    # pdf and cpp files. Instead, when `exercise` and/or `solution` folders are present
+    # the script copies only the two directories and their content.
+
+    # TODO: move weak conventions to strict conventions will simplify the code.
+
     copy_list = []
+    copy_conventional_list = []
 
-    for root, _, files in os.walk(dir):
-        for file in files:
-            if file.endswith(".pdf") or file.endswith(".cpp"):
-                copy_list.append(os.path.join(root, file))
+    for root, dirs, files in os.walk(dir):
+        for name in dirs:
+            if name in conventional_dirs:
+                copy_conventional_list.append(os.path.join(root, name))
+        for name in files:
+            if name.endswith(".pdf") or name.endswith(".cpp"):
+                copy_list.append(os.path.join(root, name))
 
-    for file in copy_list:
-        newdir = os.path.join(dist_folder, os.path.dirname(file))
-        newfile = os.path.join(dist_folder, file)
-        ensure_path(newdir)
-        shutil.copy(file, newfile)
+    logging.debug(copy_list)
+    logging.debug(copy_conventional_list)
+
+    if len(copy_conventional_list) == 0:
+        for name in copy_list:
+            newdir = os.path.join(dist_folder, os.path.dirname(name))
+            newfile = os.path.join(dist_folder, name)
+            ensure_path(newdir)
+            shutil.copy(name, newfile)
+    else:
+        for name in copy_conventional_list:
+            copy_tree(name, os.path.join(dist_folder, name))
 
     # TODO: pdf all in one directory with name of parent
 

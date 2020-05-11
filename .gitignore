@@ -4,3 +4,6 @@
 # dist & build
 *.out
 /.dist
+
+# python venv
+.venv/
