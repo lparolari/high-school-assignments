@@ -36,7 +36,12 @@ TODO: make this description better.
     - [Thousandth Pair Primes](thousandth-pair-primes)
 
   - Recursion
+
     - [Num Word](num-word)
+
+  - Projects
+
+    - [Snake](snake)
 
 - OOP programming
 
@@ -48,11 +53,16 @@ TODO: make this description better.
   - [Metric Conversion](metric-conversions-oop) (also with inheritance)
   - [Geometric Drawer](geometric-drawer-oop) (inheritance)
 
-- Projects
+  - Projects
 
-  - [Snake](snake)
-  - [Binary String Transmitter](binary-string-transmitter)
-  - [Battleship](battleship)
+    - [Binary String Transmitter](binary-string-transmitter)
+    - [Battleship](battleship)
+
+- Web Programming
+
+  - Projects
+
+    - [Acme Missiles: Falcon-10](acme-website-falcon10)
 
 ## Installation
 
