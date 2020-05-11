@@ -1,0 +1,138 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+\input{config.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+    
+    \title{Pagina Web del Falcon-10\\ \large Realizzazione di una pagina web per Acme Corporation}
+    \date{Maggio 2020}
+    
+    \maketitle
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=2]{img/acme.jpg}
+        \caption{Acme Missiles}
+    \end{figure}
+
+    Leggere attentamente la consegna e svolgere l'esercizio.
+    
+    \section{Consegna}
+    Si supponga di essere un programmatore web della \emph{Acme Missiles Corporation} al quale viene richiesto di estendere il sito web già esistente, aggiungendo una pagina web riguardante l'ultimo missile sviluppato in casa Acme, il \textbf{Falcon-10}.
+
+    La pagina web vuole essere una breve presentazione del nuovo prodotto, ma anche questionario tramite il quale iniziare fin da subito a raccogliere opinioni dei clienti per migliorare la qualità del nuovo razzo e raccogliere esperienze per sviluppi futuri.
+
+    Vi vengono consegnati due artefatti, prodotti da un vostro collega che svolge il lavoro di grafico all'interno dell'impresa. Questi  artefatti sono due \emph{mock-up}\footnote{Un mockup, o mock-up, è una realizzazione a scopo illustrativo o meramente espositivo di un oggetto o un sistema, senza le complete funzioni dell'originale; un mockup può rappresentare la totalità o solo una parte dell'originale di riferimento (già esistente o in fase di progetto), essere in scala reale oppure variata. (Fonte Wikipedia: \href{https://it.wikipedia.org/wiki/Mockup}{https://it.wikipedia.org/wiki/Mockup}).} che rappresentano in modo visuale la struttura e lo stile che la pagina web deve avere.
+
+    Il vostro compito è quello di riprodurre il mock-up che attualmente è solo un file pdf e/o un'immagine (figura \ref{fig:mockup-desktop}) in una pagina HTML a tutti gli effetti, utilizzabile da browser. Non è necessario completare i testi e le immagini mancanti sul mock-up. Attenzione! \`E necessario riprodurre fedelmente\footnote{La riproduzione non deve assolutametne essere esatta, ma piuttosto simile.} il mockup dekstop, mentre il mockup mobile è opzionale.
+
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.2]{img/mockup-desktop.png}
+        \caption{Esempio di mock-up per Desktop}
+        \label{fig:mockup-desktop}
+    \end{figure}
+
+    Vi vengono anche consegnate alcune note assieme ai mock-up che trovate in formato pdf e a risoluzione più alta in allegato a questo documento. Le note rappresentano alcuni vincoli e requisiti da rispettare per la realizzazione della pagina, nonché qualche suggerimento di realizzazione.
+
+    Di seguito le note.
+    \begin{itemize}
+        \item La pagina riguardante il falcon-10 verrà inserita all'interno di un sito web già esistente, di conseguenza nella navbar in alto andrà inserito il link all'opzione del menu \emph{falcon-10} che punterà alla pagina che state realizzando e andrà reso ``attivo'' per far capire all'utente su quale pagina del sito si trova durante la navigazione. Gli altri link della navbar possono anche non essere valorizzati, ci penserà il gestore del sito web a collegare tutti i vari puntatori. Si veda l'esempio in figura \ref{fig:navbar}.
+
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.7]{img/navbar.png}
+            \caption{Barra di navigazione: il link \emph{Falcon-10} è attivo rispetto a \emph{Apollo 11.5}}
+            \label{fig:navbar}
+        \end{figure}
+
+        \item Le immagini e le risorse necessarie per la realizzazione della pagina sono allegate a questo documento. Negli allegati è presente anche una pagina HTML di base che potete usare, la quale importa di default il framework bootstrap.
+
+        \item Molti testi della pagina devono essere ancora definiti. Per ora utilizzare il generatore di testi fake \emph{Lorem Ipsum}\footnote{\href{https://www.lipsum.com/}{https://www.lipsum.com/}} tramite il quale è possibile copiare e incollare dei paragrafi generati automaticamente che completano lo stile della pagina. Altrimenti, è anche possibile fare copia e incolla dei testi dal mock-up.
+
+        \item Anche alcune immagini della pagina devono essere ancora definite. Nel frattempo è possibile utilizzare un generatore di immagini fake \emph{Fake Image Please?}\footnote{\href{https://fakeimg.pl/}{https://fakeimg.pl/}}. Il generatore consente di generare immagini di tutte le dimensioni indicandole semplicemente nell'url. \'E anche possibile inserire del testo o dare un colore personalizzato alle immagini. Riferirsi alla pagina del servizio, dove è possibile trovare ulteriori esempi.
+
+        \item La struttura delle pagina deve essere rispettata per come è stata progettata. \'E possibile invece modificare alcuni stili a piacimento, ad esempio: font, colori, spaziature tra le parole, frasi, eccetera. Usare la fantasia!
+
+        \item La sezione del questionario è molto importante per l'impresa e deve essere replicata con cura e configurata di modo che tutti i dati siano facilmente inviabili ad un server. Popolare quindi in modo corretto i campi \emph{id} e \emph{name} degli elementi che potranno essere inviati al server.
+
+        \item Tutti gli elementi della pagina possono essere facilmente presi e personalizzati da Bootstrap. 
+
+        \item \'E possibile utilizzare un un icon pack come quello fornito da \emph{Font Awesome}\footnote{\href{https://fontawesome.com/icons?d=gallery}{https://fontawesome.com/icons?d=gallery}} per inserire delle icone nella pagina HTML. Le icone possono essere inserite tramite il tag \texttt{<i></i>}. Nell'attributo class del suddetto tag è possibile indicare un'icona. Nel caso si utilizzi l'icon pack di font-awesome è possibile utilizzare \texttt{<i class="fa fa-user"></i>} per creare un'icona che rappresenta la figura di una persona (esempi in figura \ref{fig:button-icon} e \ref{fig:text-input-icon}). 
+
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.7]{img/button-icon.png}
+            \caption{Pulsante con icona}
+            \label{fig:button-icon}
+        \end{figure}
+
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.7]{img/text-input-icon.png}
+            \caption{Casella di testo con icona}
+            \label{fig:text-input-icon}
+        \end{figure}
+
+        \item Al capo progetto piace molto la struttura a griglia di Bootstrap, cercare di sfruttarla al massimo per l'impaginazione. Quasi la totalità dello stile di impaginazione è realizzabile tramite il grid system di Bootstrap a partire dala disposizioni delle immagini nella sezione ``Il missile'', il form, i componenti del form e così via.
+
+        \item Sul web è importante indicare i diritti d'autore sui contenuti che create, indicate il vostro nome e cognome nel footer della pagina!
+
+        \item Google è tuo amico! In HTML e CSS ci sono veramente troppi attributi e varianti da tenere a mente, non aver paura a fare ricerche del tipo \emph{``Come centrare un bottone in HTML?''}, ancor meglio se in inglese.
+
+        \item Alla scadenza, è possibile consegnare anche prototipi della pagina HTML finale, con alcune mancanze rispetto al mock-up fornito. Ovviamente, il vostro capo progetto potrebbe non essere soddisfatto al 100%.
+
+    \end{itemize}
+
+    \section{Allegati}
+
+    Di seguito una descrizione di quello che vi verrà fornito per svolgere il lavoro.
+    \begin{itemize}
+        \item \textbf{exercise.pdf}, ovvero questo file.
+        \item \textbf{acme.zip}, un archivio contente una cartella \emph{acme}, ovvero la cartella del sito web. All'interno di questa cartella saranno presenti
+        \begin{itemize}
+            \item una cartella \emph{img} contenente le immagini da inserire nel sito, e 
+            \item il file \emph{falcon10.html} con lo scheletro HTML della pagine web. Voi dovrete lavorare principalmente su questo file.
+        \end{itemize} 
+        \item \textbf{mockup-desktop.pdf}, un pdf del mockup in versione desktop.
+        \item \textbf{mockup-mobile.pdf}, un pdf del mockup in versione mobile.
+    \end{itemize}
+
+    \section{Cosa consegnare}
+
+    Consegnare la cartella \emph{acme} (anche zippata) contenente il file \emph{falcon10.html} modificato e tutti gli altri file necessari per far funzionare la pagina \emph{falcon10.html}.
+
+\end{document}
