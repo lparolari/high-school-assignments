@@ -1,0 +1,63 @@
+%% ***************************************************************
+%  Copyright (C) Luca Parolari 2020
+%  
+%  luca.parolari23@gmail.com
+%
+%  You should have received a copy of the license with this file,
+%  if not write to the author and request the license.
+
+% !TeX spellcheck = it_IT
+
+%\documentclass[addpoints,12pt]{exam}
+\documentclass[addpoints,12pt,answers]{exam}
+
+%% ***************************************************************
+%  PACKAGES
+%  ========
+\input{packages.tex}
+
+%% ***************************************************************
+%  RESOURCES
+%  =========
+\input{prooftree.tex}
+\input{macros.tex}
+\input{config.tex}
+
+%% ***************************************************************
+%  CONFIGURATIONS
+%  ==============
+\input{exerciseconfig.tex}
+
+
+% ****************************************************************
+% DOCUMENT
+% ========
+
+\author{Luca Parolari\footnote{\href{mailto:luca.parolari23@gmail.com}{luca.parolari23@gmail.com}}}
+
+\begin{document}
+    
+    \title{Tipo di Dato Astratto Coda}
+    \date{Maggio 2020}
+    
+    \maketitle
+    
+    Leggere attentamente la consegna e svolgere l'esercizio.
+    
+    \section{Consegna}
+    Si realizzi un programma che implementa un tipo di dato astratto coda. Una coda o \emph{queue} mette a disposizione tra le varie funzioni di utilità che andranno definite, due operazioni principali: \textbf{enqueue} (mettere in coda) e \textbf{dequeue} (rimuovere dalla coda).
+
+    Il comportamento della coda permette di gestire il contenitore di oggetti proprio come una coda al supermercato: il primo che arriva è il primo ad essere servito ed è quindi il primo a essere rimosso dalla coda. Gli altri, arrivati successivamente invece, si accodano e vengono estratti in ordine di arrivo. Analogamente, nel mondo informatico possiamo vedere la coda come un buffer FIFO (Fist In First Out).
+
+    TODO
+
+    
+    \section{Esempi di utilizzo}
+    \footnote{Input sottolineato.}
+    
+	\begin{lstlisting}[style=verbatim]
+		somethign
+		%\underline{input}%
+	\end{lstlisting}
+    
+\end{document}
