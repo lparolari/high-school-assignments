@@ -54,6 +54,27 @@ TODO: make this description better.
   - [Binary String Transmitter](binary-string-transmitter)
   - [Battleship](battleship)
 
+## Installation
+
+Download the repository
+
+```
+git clone git@github.com:lparolari/high-school-assignments.git
+```
+
+(Optional) Add a python virtualenv and install dependencies
+
+```
+# add the virtual environment
+virtualenv .venv
+
+# activate it
+source .venv/bin/activate
+
+# install dependencies
+pip install dryable
+```
+
 ## Usage
 
 In order to compile all the source run the following command
@@ -66,10 +87,48 @@ It will create a folder `.dist` with all the exercises built.
 The script uses the command `make pdf` in order to build an exercise and copies to the target output
 directory all the `.pdf` and `.cpp` files from the source directory.
 
+Please use `python build.py --help` for more informations.
+
+```
+$ python build.py  --help
+usage: build.py [-h] [--read-from source] [--path path] [--list list]
+                [--dry-run] [-v]
+
+Welcome to the building script for the high school assignments. You can build
+assignments source with a single command. (C) Luca Parolari
+<luca.parolari23@gmail.com>
+
+optional arguments:
+  -h, --help          show this help message and exit
+  --read-from source  Source from which reading the targets. Options are `ls`,
+                      `list` and `file`.
+  --path path         The sources path. (Used with `--read-from` argument with
+                      `ls`, `file`).
+  --list list         The sources list. (Used with `--read-from list`).
+  --dry-run           Do a trial run with actions performed.
+  -v, --verbose       Increase output verbosity.
+
+As an alternative to the commandline, params can be placed in a file, one per
+line, and specified on the commandline like 'build.py @params.conf'.
+```
+
+If you need to add some assignments please use the latex template
+[programming-exercise-template](https://github.com/lparolari/programming-exercise-template)
+In order to use is run the following commands
+
+```
+git clone git@github.com:lparolari/programming-exercise-template.git exercise-name
+cd exercise-name
+rm -rf .git .travis.yml LICENSE README.md
+```
+
+See more at _programming-exercise-template/README.md_.
+
 ## Strucutre
 
 The repository is a collection of exercises and it uses some conventions in order
-to simplify some task such as build or delivery.
+to simplify some task such as build or delivery. If you can, please use strict conventions
+and also weak conventions.
 
 ### Strict Conventions
 
@@ -82,7 +141,7 @@ to simplify some task such as build or delivery.
 - if the exercise has a written solution, it should be contained in the `solution` directory
 - if the exercise has a base solution with some code, it should be contained in the `exercise` directory
 - if `.cpp` files are unique they should be called `exercise.cpp`
-- relations between exercises and they context should be excluded from exercise names, list them in the readme instead
+- relations between exercises and their context should be excluded from exercise names, list them in the readme instead
 
 ## Contributing
 
