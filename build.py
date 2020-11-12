@@ -65,8 +65,8 @@ def trigger_build(dir) -> Tuple[bool, str]:
 
     o, e = proc.communicate(timeout=10)
 
-    e = e.decode('ascii')
-    o = o.decode('ascii')
+    e = e.decode('utf-8')
+    o = o.decode('utf-8')
     retcode = proc.returncode
 
     if e == '':

@@ -7,3 +7,5 @@
 
 # python venv
 .venv/
+
+**/latexdockercmd.sh

@@ -9,14 +9,22 @@ BUILD_DIR = _build
 .PHONY: all
 all:  # all do nothing by default
 
-pdf: pdf1  # default
+pdf: pdf3  # default
 pdf1: pdflatex bib pdflatex
 pdf2: pdfdocker
+pdf3: blang-latex-docker
 
 prettify: backup tabs2spaces rmTrailingSpaces
 
 # ***********************************************************
 # ****** BUILD RECIPES
+
+# build using blang docker config
+blang-latex-docker: latexdockercmd.sh
+	./latexdockercmd.sh pdflatex ${MAINFILE}.tex
+latexdockercmd.sh:
+	wget https://raw.githubusercontent.com/blang/latex-docker/master/latexdockercmd.sh
+	chmod +x latexdockercmd.sh
 
 # build using docker
 pdfdocker:

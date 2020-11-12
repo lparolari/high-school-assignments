@@ -78,6 +78,8 @@ git clone git@github.com:lparolari/high-school-assignments.git
 ```
 # add the virtual environment
 virtualenv .venv
+# or, with
+python3 -m virtualenv .venv
 
 # activate it
 source .venv/bin/activate
@@ -86,12 +88,17 @@ source .venv/bin/activate
 pip install dryable
 ```
 
+You may install docker package, see https://github.com/blang/latex-docker.
+
 ## Usage
 
 In order to compile all the source run the following command
 
 ```
 python build.py
+
+# or, with
+./build.py
 ```
 
 It will create a folder `.dist` with all the exercises built.
