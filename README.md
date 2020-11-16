@@ -1,69 +1,39 @@
 # Assignments
 
-TODO: make this description better.
+This repository is a collection of exercises for computer science course in high school classes (2hrs of lectures per week). All exercises have their own description provided with a pdf file that can be delivered as an assignment. The description should be self-contained.
 
 ## Contents
 
-- Imperative programming
+| Category               | Topic     | Exercise                                               |
+| ---------------------- | --------- | ------------------------------------------------------ |
+| Imperative programming | Base      | [Date Checker](date-checker)                           |
+|                        |           | [Print Rectangle](print-rectangle)                     |
+|                        |           | [Second Grade Equations](second-grade-eq)              |
+|                        |           | [Weighted Average](weighted-average)                   |
+|                        | Array     | [Search Date](search-date)                             |
+|                        |           | [Strings Array](strings-array)                         |
+|                        |           | [Dynamic Array](dynamic-array)                         |
+|                        |           | [Check Sorted](check-sorted)                           |
+|                        | File      | [File Splitter](file-splitter)                         |
+|                        | Struct    | [Football Betting](football-betting)                   |
+|                        |           | [ADT Optional Int](optional-int-adt--struct)           |
+|                        | Math      | [Galton Machine](galton-machine)                       |
+|                        |           | [Smallest Multiple](smallest-multiple)                 |
+|                        |           | [Big Integer](big-integer)                             |
+|                        |           | [Thousandth Pair Primes](thousandth-pair-primes)       |
+|                        | Recursion | [Num Word](num-word)                                   |
+|                        | Projects  | [Snake](snake)                                         |
+|                        |           | [Binary String Transmitter](binary-string-transmitter) |
+|                        |           | [Battleship](battleship)                               |
+| OOP programming        |           | [Library](library-oop)                                 |
+|                        |           | [Matrix](matrix-oop)                                   |
+|                        |           | [Strongbox](strongbox-oop)                             |
+|                        |           | [Binary Criteria](binary-criteria-oop) \[^1\]          |
+|                        |           | [Metric Conversion](metric-conversions-oop) \[^1\]     |
+|                        |           | [Geometric Drawer](geometric-drawer-oop) \[^1\]        |
+| Web Programming        | Projects  | [Acme Missiles: Falcon-10](acme-website-falcon10)      |
 
-  - Base
-
-    - [Date Checker](date-checker)
-    - [Print Rectangle](print-rectangle)
-    - [Second Grade Equations](second-grade-eq)
-    - [Weighted Average](weighted-average)
-
-  - Array
-
-    - [Search Date](search-date)
-    - [Strings Array](strings-array)
-    - [Dynamic Array](dynamic-array)
-    - [Check Sorted](check-sorted)
-
-  - File
-
-    - [File Splitter](file-splitter)
-
-  - Struct
-
-    - [Football Betting](football-betting)
-    - [ADT Optional Int](optional-int-adt--struct)
-
-  - Math
-
-    - [Galton Machine](galton-machine)
-    - [Smallest Multiple](smallest-multiple)
-    - [Big Integer](big-integer)
-    - [Thousandth Pair Primes](thousandth-pair-primes)
-
-  - Recursion
-
-    - [Num Word](num-word)
-
-  - Projects
-
-    - [Snake](snake)
-
-- OOP programming
-
-  - [Person](person-oop)
-  - [Library](library-oop)
-  - [Matrix](matrix-oop)
-  - [Strongbox](strongbox-oop)
-  - [Binary Criteria](binary-criteria-oop) (also with inheritance)
-  - [Metric Conversion](metric-conversions-oop) (also with inheritance)
-  - [Geometric Drawer](geometric-drawer-oop) (inheritance)
-
-  - Projects
-
-    - [Binary String Transmitter](binary-string-transmitter)
-    - [Battleship](battleship)
-
-- Web Programming
-
-  - Projects
-
-    - [Acme Missiles: Falcon-10](acme-website-falcon10)
+\[^1\]: also with inheritance
 
 ## Installation
 
