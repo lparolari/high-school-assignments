@@ -63,7 +63,7 @@ def trigger_build(dir) -> Tuple[bool, str]:
                             stderr=subprocess.PIPE,
                             shell=True)
 
-    o, e = proc.communicate(timeout=10)
+    o, e = proc.communicate(timeout=20 * 60)
 
     e = e.decode('utf-8')
     o = o.decode('utf-8')
