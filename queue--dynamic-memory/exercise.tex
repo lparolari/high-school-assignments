@@ -71,83 +71,90 @@
     La coda deve quindi fornire i seguenti metodi.
 
     \begin{itemize}
-        \item Un metodo \emph{push} (rappresenta la funzionalità di
-          \emph{enqueue}) che inserisce gli elementi sempre dalla
-          testa della coda.
-        \item Un metodo \emph{pop} (rappresenta la funzionalità di
-          \emph{dequeue}) che rimuove gli elementi sempre dal fondo
+        \item Un metodo \emph{inserisci} (rappresenta la funzionalità di
+          \emph{enqueue}) che inserisce gli elementi sempre dal fondo
           della coda.
-        \item Un metodo \emph{top} che permette di visualizzare il
-          primo elemento della coda.
-        \item Un metodo \emph{isEmpty} che restituisce \texttt{true}
+        \item Un metodo \emph{togli} (rappresenta la funzionalità di
+          \emph{dequeue}) che rimuove gli elementi dall'inizio della
+          coda.
+        \item Un metodo \emph{primo} che permette di visualizzare il
+          primo elemento (in testa) della coda.
+        \item Un metodo \emph{is\_vuota} che restituisce \texttt{true}
           se la lista è vuota, \texttt{false} altrimenti.
+        \item Un metodo \emph{costruisci\_vuota} che costruisce una coda
+          composta da $0$ elementi.
         \item Vari metodi definiti da utente (a piacere) che
           permettono di popolare una coda da altri contenitori, per
           esempio da un array.
-        \item Un metodo \emph{size} che restituisce la dimensione
+        \item Un metodo \emph{dimensione} che restituisce la dimensione
           della coda.
         \item Altre funzioni di utilità opzionali definite 
           dall'utente coerenti con la filosofia della coda.
     \end{itemize}
 
     \noindent\textbf{Nota.} I dettagli sono appositamente non definiti.
-
-    \noindent\textbf{Suggerimento.} La maggior parte dei metodi sopra
+    
+    \vspace{1em}\noindent\textbf{Suggerimento.} La maggior parte dei metodi sopra
     citati possono essere facilmente implementati utilizzando i metodi
-    della \emph{linked list}. L'efficienza migliore in termini di
-    implementazione si ottiene se vengono mantenuti i riferimenti sia
-    alla testa che alla coda della lista, ovvero, se al posto di una
-    \emph{linked list ``semplice''} si implementa una
+    della \emph{linked list} ($\leq 2$ righe di codice per
+    metodo).
+
+    \vspace{1em}\noindent\textbf{Estensione} \emph{(opzionale)}.  L'efficienza
+    migliore in termini di implementazione si ottiene se vengono
+    mantenuti i riferimenti sia alla testa che alla coda della lista,
+    ovvero, se al posto di una \emph{linked list ``semplice''} si
+    implementa una
     \emph{\href{https://it.wikipedia.org/wiki/Deque}{double ended
         queue}}.
-    \footnote{\href{https://it.wikipedia.org/wiki/Deque}{https://it.wikipedia.org/wiki/Deque}}
-    \footnote{L'attenzione all'efficienza dell'implementazione viene
-      tenuta in considerazione per la valutazione dell'esercizio.}
+    \footnote{\href{https://it.wikipedia.org/wiki/Deque}{https://it.wikipedia.org/wiki/Deque}} \\
+    Modificare la \emph{linked list} per implementare una
+    \emph{double ended queue} e rendere più efficiente
+    l'implementazione della coda.
 
-   
     \section{Esempi di utilizzo}
 
-    Il seguente esempio può essere utilizzato come main dell'esercizio
-    per verificare la correttezza dell'implementazione.
+    Il seguente codice è un esempio di main che testa
+    alcune funzionalità della coda. 
     
     \begin{lstlisting}[style=verbatim]
         // Esempio: cassa di un supermercato.
 
-        // Le code rappresentano le casse di un supermercato
-        Coda c1;  // fila alla cassa 1
-        Coda c2;  // fila alla cassa 2
+        Coda::Coda c1 = Coda::costruisci_vuota(); // fila alla cassa 1
+        Coda::Coda c2 = Coda::costruisci_vuota(); // fila alla cassa 2
 
-        c1 = push(c1, 1);     // arriva il cliente 1 e va alla cassa 1
-        c2 = push(c2, 2);     // arriva il cliente 2 e va alla cassa 2
-        c1 = push(c1, 3);     // arriva il cliente 3 e va alla cassa 1
+        c1 = Coda::inserisci(c1, 1); // arriva il cliente 1 e va alla cassa 1
+        c2 = Coda::inserisci(c2, 2); // arriva il cliente 2 e va alla cassa 2
+        c1 = Coda::inserisci(c1, 3); // arriva il cliente 3 e va alla cassa 1
 
-        std::cout << size(c1) << std::endl;  // restituisce 2
-        std::cout << size(c2) << std::endl;  // restituisce 1
+        std::cout << Coda::dimensione(c1) << std::endl; // restituisce 2
+        std::cout << Coda::dimensione(c2) << std::endl; // restituisce 1
 
-        std::cout << top(c1) << std::endl;   // restituisce 1 (il cliente 1)
+        std::cout << Nodo::valore(Coda::primo(c1)) << std::endl; // restituisce 1 (il cliente 1)
 
-        stampa(c1);           // stampa [1, 3, ]
-        stampa(c2);           // stampa [2, ]
+        Coda::stampa(c1); // stampa [1, 3, ]
+        Coda::stampa(c2); // stampa [2, ]
 
-        c1 = pop(c1);         // viene servito il cliente 1 della cassa 1
-        c2 = pop(c2);         // viene servito il cliente 2 della cassa 2
+        c1 = Coda::togli(c1); // viene servito il cliente 1 della cassa 1
+        c2 = Coda::togli(c2); // viene servito il cliente 2 della cassa 2
 
-        stampa(c1);           // stampa [3, ] che sono i clienti ancora in attesa alla cassa 1
-        stampa(c2);           // stampa [] che sono i clienti ancora in attesa alla cassa 2 (nessuno!)
+        Coda::stampa(c1); // stampa [3, ] che sono i clienti ancora in attesa alla cassa 1
+        Coda::stampa(c2); // stampa [] che sono i clienti ancora in attesa alla cassa 2(nessuno !)
 
         // Visualizza il primo cliente della cassa c2 (se esiste!)
-        if (!isEmpty(c2)) {
-            std::cout << top(c2) << std::endl;
+        if (!Coda::is_vuota(c2))
+        {
+          std::cout << Coda::primo(c2) << std::endl;
         }
-        else {
-            std::cout << "La lista e' vuota!" << std::endl;
+        else
+        {
+          std::cout << "La lista e' vuota!" << std::endl;
         }
 
-        c1 = push(c1, 4)      // arriva il cliente 4 e va alla cassa 1
-        c2 = push(c2, 5)      // arriva il cliente 5 e va alla cassa 2
+        c1 = Coda::inserisci(c1, 4); // arriva il cliente 4 e va alla cassa 1
+        c2 = Coda::inserisci(c2, 5); // arriva il cliente 5 e va alla cassa 2
 
-        stampa(c1);           // stampa [3, 4, ]
-        stampa(c2);           // stampa [5, ]
+        Coda::stampa(c1); // stampa [3, 4, ]
+        Coda::stampa(c2); // stampa [5, ]
     \end{lstlisting}
     
 \end{document}
