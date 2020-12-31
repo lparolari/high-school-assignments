@@ -193,3 +193,13 @@ at Liceo Golgi of Breno, Italy.
 ## License
 
 See [LICENSE](LICENSE) file.
+
+---
+
+## Usage (LEGACY)
+
+Build C++ assigment and copy `.cpp` files.
+
+```bash
+python build.py
+```
