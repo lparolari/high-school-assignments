@@ -1,6 +1,10 @@
-# Assignments
+# High School Assignments
 
-This repository is a collection of exercises for computer science course in high school classes (2hrs of lectures per week). All exercises have their own description provided with a pdf file that can be delivered as an assignment. The description should be self-contained.
+This repository is a collection of exercises for computer science
+course in high school classes (2hrs of lectures per week). All
+exercises have their own description provided with a pdf file that
+can be delivered as an assignment and optionally some resources. The
+description should be self-contained.
 
 ## Contents
 
@@ -63,47 +67,103 @@ You may install docker package, see https://github.com/blang/latex-docker.
 
 ## Usage
 
+**Requirements**
+
+- make
+- python (>= 3.8)
+- docker
+- latex (optional, depending on the build system you choose)
+
+**Compile sources**
+
 In order to compile all the source run the following command
 
 ```
 python build.py
-
-# or, with
-./build.py
 ```
 
-It will create a folder `.dist` with all the exercises built.
-The script uses the command `make pdf` in order to build an exercise and copies to the target output
-directory all the `.pdf` and `.cpp` files from the source directory.
+This will generate two directories
 
-Please use `python build.py --help` for more informations.
+- `.dist` where you can find a pdf file with the assigmnet
+  instructions, some resources in `exercise` folder and the solution
+  in the `solution` folder, and
+- `.dist-pdf` where you can find all assigmnet instructions in one
+  folder.
+
+The script uses the command `make pdf` in order to build an exercise
+and copies to the target output directory all the `.pdf` files from
+the source directory plus the folder `exercise` and the folder
+`solution` if existing.
+
+Please use `python build_new.py --help` for more informations.
 
 ```
 $ python build.py  --help
-usage: build.py [-h] [--read-from source] [--path path] [--list list]
-                [--dry-run] [-v]
+usage: build_new.py [-h] [--dry-run] [-v]
 
-Welcome to the building script for the high school assignments. You can build
-assignments source with a single command. (C) Luca Parolari
-<luca.parolari23@gmail.com>
+Welcome to the building script for the high school assignments.
+You can build assignments source with a single command.
+(C) Luca Parolari <luca.parolari23@gmail.com>
 
 optional arguments:
-  -h, --help          show this help message and exit
-  --read-from source  Source from which reading the targets. Options are `ls`,
-                      `list` and `file`.
-  --path path         The sources path. (Used with `--read-from` argument with
-                      `ls`, `file`).
-  --list list         The sources list. (Used with `--read-from list`).
-  --dry-run           Do a trial run with actions performed.
-  -v, --verbose       Increase output verbosity.
+  -h, --help     show this help message and exit
+  --dry-run      Do a trial run with actions performed.
+  -v, --verbose  Increase output verbosity.
 
-As an alternative to the commandline, params can be placed in a file, one per
-line, and specified on the commandline like 'build.py @params.conf'.
+As an alternative to the commandline, params can be placed in a
+file, one per line, and specified on the commandline like
+'build_new.py @params.conf'.
 ```
 
-If you need to add some assignments please use the latex template
-[programming-exercise-template](https://github.com/lparolari/programming-exercise-template)
-In order to use is run the following commands
+## Strucutre
+
+The repository is a collection of exercises and it uses some
+conventions in order to simplify some task such as build or
+delivery. If you can, please use strict conventions and also
+weak conventions.
+
+### Strict Conventions
+
+- every exercise is a directory with the name of exercise in the
+  format `name-of-exercise--variant`
+- every latex project has a `Makefile` with the `pdf` target
+
+### Weak Conventions
+
+- if the exercise has a written solution, it should be contained
+  in the `solution` directory
+- if the exercise has a base solution with some code, it should be
+  contained in the `exercise` directory
+- relations between exercises and their context should be excluded
+  from exercise names, list them in the readme instead
+
+## Contributing
+
+> Pull requests are welcome, every contribute will build a better
+> world for computer science teachers.
+
+### Adding an exercise
+
+In order to add an exercise you should follow conventions above.
+However, every exercise can be different from the other but it...
+
+**must provide**
+
+- a `Makefile` with the target `pdf`
+
+**should provide**
+
+- an `exercise` directory with resources for the assigment
+- a `solution` directory with exercise's solution
+
+### Assigment templates
+
+**programming-exercise-template**
+
+A latex template for exercises. You can find the source code at
+[https://github.com/lparolari/programming-exercise-template](https://github.com/lparolari/programming-exercise-template).
+
+For a quick start run
 
 ```
 git clone git@github.com:lparolari/programming-exercise-template.git exercise-name
@@ -111,31 +171,11 @@ cd exercise-name
 rm -rf .git .travis.yml LICENSE README.md
 ```
 
-See more at _programming-exercise-template/README.md_.
+For more info, please refer to [programming-exercise-template/README.md](https://github.com/lparolari/programming-exercise-template#readme).
 
-## Strucutre
+**markdown-exercise**
 
-The repository is a collection of exercises and it uses some conventions in order
-to simplify some task such as build or delivery. If you can, please use strict conventions
-and also weak conventions.
-
-### Strict Conventions
-
-- every exercise is a directory with the name of exercise with this format `name-of-exercise--variant` (see more about naming conventions below)
-- every exercise in its main directory has a latex source with the text of the exercise
-- every latex project has a `Makefile` with the `pdf` target
-
-### Weak Conventions
-
-- if the exercise has a written solution, it should be contained in the `solution` directory
-- if the exercise has a base solution with some code, it should be contained in the `exercise` directory
-- if `.cpp` files are unique they should be called `exercise.cpp`
-- relations between exercises and their context should be excluded from exercise names, list them in the readme instead
-
-## Contributing
-
-Pull requests are welcome, every contribute will build a better
-world for computer science teachers.
+WIP (for now, use as an example [solar-system-simulation](solar-system-simulation))
 
 ## Author
 
