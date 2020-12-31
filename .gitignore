@@ -3,7 +3,7 @@
 
 # dist & build
 *.out
-/.dist
+/.dist*
 
 # python venv
 .venv/
