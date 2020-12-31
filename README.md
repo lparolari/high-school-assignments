@@ -32,6 +32,7 @@ This repository is a collection of exercises for computer science course in high
 |                        |           | [Metric Conversion](metric-conversions-oop) \[^1\]     |
 |                        |           | [Geometric Drawer](geometric-drawer-oop) \[^1\]        |
 | Web Programming        | Projects  | [Acme Missiles: Falcon-10](acme-website-falcon10)      |
+|                        |           | [Solar System Simulation](solar-system-simulation)     |
 
 \[^1\]: also with inheritance
 
