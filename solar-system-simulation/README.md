@@ -83,6 +83,62 @@ Vanno implementate le funzion
 - `forwardEntities(entities: Entity[]): Entity[]`
 - `once(system: System): System`
 
+## Estensioni
+
+Realizzare le seguenti estensioni e cercare di testarle per quanto più
+possibile.
+
+### A. Dettagli sui pianet
+
+Informazioni aggiuntive sulle entità trattate dalla simulazione
+possono aiutare una futura GUI (Graphic User Interface) a visualizzare
+la simulazione in modo più dettagliato, diversificando ad esempio la
+dimensione dei pianeti.
+
+Aggiungere un parametro che rappresenta la dimensione di un'entità
+espresso con un'unità di misura adeguata all'obiettivo. Si richiede
+anche di predisporre adeguate funzioni per l'accesso, modifica e
+aggiunta di questa informazione.
+
+### B. Modificare l'orbita
+
+Tutti i corpi del sistema solare seguono un'orbita più o meno
+ellittica.
+
+Modificare le regole di aggiornamento del sistema solare per
+supportare la rotazione di punti su orbite ellittiche. (Vedi
+[ellissi](https://en.wikipedia.org/wiki/Ellipse) su Wikipedia).
+
+> Attenzione: ogni entità segue un'orbita diversa da quella degli
+> altri pianeti. La simulazione dovrebbe riuscire a supportare ordbite
+> diverse per pianeti diversi.
+
+_Suggerimento_. Un cerchio è un caso particolare dell'ellissi dove i
+due fuochi _F1_ e _F2_ coincidono. Inizialmente, per semplificare lo
+sviluppo, è quindi possibile utilizzare "ellissi circolari" e
+riciclare i test su orbite circolari.
+
+### C. Fascia di asteroidi
+
+Il sistema solare per sua struttura, presenta una
+[cintura di asteroidi](https://it.wikipedia.org/wiki/Sistema_solare#Fascia_degli_asteroidi)
+tra le orbite di Marte e Giove, ovvero tra 2.3 e 3.3 UA dal Sole.
+
+Aggiungere al sistema solare in modo automatizzato 10 mila asteroidi
+generati in maniera randomica e distribuiti su tutta superificie della
+fascia di asteroidi.
+
+### D. Supporto 3D (opzionale)
+
+Una simulazione più realistica, chiaramente, tiene conto anche della
+componente Z dello spazio.
+
+Modificare la simulazione di modo da aggiungere la terza componente e
+rendere la simulazione tridimensionale.
+
+> Attenzione: tutto il codice precedente e soprattutto i test devono
+> essere ataddati.
+
 ## Istruzioni
 
 ### Pacchetto
