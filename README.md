@@ -2,43 +2,45 @@
 
 This repository is a collection of exercises for computer science
 course in high school classes (2hrs of lectures per week). All
-exercises have their own description provided with a pdf file that
-can be delivered as an assignment and optionally some resources. The
+exercises have their own description provided with a pdf file that can
+be delivered as an assignment and optionally some resources. The
 description should be self-contained.
 
 ## Contents
 
-| Category               | Topic     | Exercise                                               |
-| ---------------------- | --------- | ------------------------------------------------------ |
-| Imperative programming | Base      | [Date Checker](date-checker)                           |
-|                        |           | [Print Rectangle](print-rectangle)                     |
-|                        |           | [Second Grade Equations](second-grade-eq)              |
-|                        |           | [Weighted Average](weighted-average)                   |
-|                        | Array     | [Search Date](search-date)                             |
-|                        |           | [Strings Array](strings-array)                         |
-|                        |           | [Dynamic Array](dynamic-array)                         |
-|                        |           | [Check Sorted](check-sorted)                           |
-|                        | File      | [File Splitter](file-splitter)                         |
-|                        | Struct    | [Football Betting](football-betting)                   |
-|                        |           | [ADT Optional Int](optional-int-adt--struct)           |
-|                        | Math      | [Galton Machine](galton-machine)                       |
-|                        |           | [Smallest Multiple](smallest-multiple)                 |
-|                        |           | [Big Integer](big-integer)                             |
-|                        |           | [Thousandth Pair Primes](thousandth-pair-primes)       |
-|                        | Recursion | [Num Word](num-word)                                   |
-|                        | Projects  | [Snake](snake)                                         |
-|                        |           | [Binary String Transmitter](binary-string-transmitter) |
-|                        |           | [Battleship](battleship)                               |
-| OOP programming        |           | [Library](library-oop)                                 |
-|                        |           | [Matrix](matrix-oop)                                   |
-|                        |           | [Strongbox](strongbox-oop)                             |
-|                        |           | [Binary Criteria](binary-criteria-oop) \[^1\]          |
-|                        |           | [Metric Conversion](metric-conversions-oop) \[^1\]     |
-|                        |           | [Geometric Drawer](geometric-drawer-oop) \[^1\]        |
-| Web Programming        | Projects  | [Acme Missiles: Falcon-10](acme-website-falcon10)      |
-|                        |           | [Solar System Simulation](solar-system-simulation)     |
+| Category                      | Topic     | Exercise                                               |
+| ----------------------------- | --------- | ------------------------------------------------------ |
+| Imperative programming \[^2\] | Base      | [Date Checker](date-checker)                           |
+|                               |           | [Print Rectangle](print-rectangle)                     |
+|                               |           | [Second Grade Equations](second-grade-eq)              |
+|                               |           | [Weighted Average](weighted-average)                   |
+|                               | Array     | [Search Date](search-date)                             |
+|                               |           | [Strings Array](strings-array)                         |
+|                               |           | [Dynamic Array](dynamic-array)                         |
+|                               |           | [Check Sorted](check-sorted)                           |
+|                               |           | [Array Analysis](array-analysis)                       |
+|                               | File      | [File Splitter](file-splitter)                         |
+|                               | Struct    | [Football Betting](football-betting)                   |
+|                               |           | [ADT Optional Int](optional-int-adt--struct)           |
+|                               | Math      | [Galton Machine](galton-machine)                       |
+|                               |           | [Smallest Multiple](smallest-multiple)                 |
+|                               |           | [Big Integer](big-integer)                             |
+|                               |           | [Thousandth Pair Primes](thousandth-pair-primes)       |
+|                               | Recursion | [Num Word](num-word)                                   |
+|                               | Projects  | [Snake](snake)                                         |
+|                               |           | [Binary String Transmitter](binary-string-transmitter) |
+|                               |           | [Battleship](battleship)                               |
+| OOP programming               |           | [Library](library-oop)                                 |
+|                               |           | [Matrix](matrix-oop)                                   |
+|                               |           | [Strongbox](strongbox-oop)                             |
+|                               |           | [Binary Criteria](binary-criteria-oop) \[^1\]          |
+|                               |           | [Metric Conversion](metric-conversions-oop) \[^1\]     |
+|                               |           | [Geometric Drawer](geometric-drawer-oop) \[^1\]        |
+| Web Programming               | Projects  | [Acme Missiles: Falcon-10](acme-website-falcon10)      |
+|                               |           | [Solar System Simulation](solar-system-simulation)     |
 
-\[^1\]: also with inheritance
+\[^1\]: also with inheritance \[^2\]: imperative and procedural
+programming
 
 ## Installation
 
@@ -63,7 +65,8 @@ source .venv/bin/activate
 pip install dryable
 ```
 
-You may install docker package, see https://github.com/blang/latex-docker.
+You may install docker package, see
+https://github.com/blang/latex-docker.
 
 ## Usage
 
@@ -118,9 +121,8 @@ file, one per line, and specified on the commandline like
 ## Strucutre
 
 The repository is a collection of exercises and it uses some
-conventions in order to simplify some task such as build or
-delivery. If you can, please use strict conventions and also
-weak conventions.
+conventions in order to simplify some task such as build or delivery.
+If you can, please use strict conventions and also weak conventions.
 
 ### Strict Conventions
 
@@ -130,8 +132,8 @@ weak conventions.
 
 ### Weak Conventions
 
-- if the exercise has a written solution, it should be contained
-  in the `solution` directory
+- if the exercise has a written solution, it should be contained in
+  the `solution` directory
 - if the exercise has a base solution with some code, it should be
   contained in the `exercise` directory
 - relations between exercises and their context should be excluded
@@ -171,11 +173,13 @@ cd exercise-name
 rm -rf .git .travis.yml LICENSE README.md
 ```
 
-For more info, please refer to [programming-exercise-template/README.md](https://github.com/lparolari/programming-exercise-template#readme).
+For more info, please refer to
+[programming-exercise-template/README.md](https://github.com/lparolari/programming-exercise-template#readme).
 
 **markdown-exercise**
 
-WIP (for now, use as an example [solar-system-simulation](solar-system-simulation))
+WIP (for now, use as an example
+[solar-system-simulation](solar-system-simulation))
 
 ## Author
 
@@ -187,8 +191,8 @@ at Liceo Golgi of Breno, Italy.
 > :warning: This repository is not intended to be a complete and
 > professional support to teachers. It is only a collection of some
 > exercises with solutions and eventually some notes. The repository
-> may (and probably is) full of imprecision and errors. Take this
-> as is.
+> may (and probably is) full of imprecision and errors. Take this as
+> is.
 
 ## License
 
