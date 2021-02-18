@@ -8,36 +8,37 @@ description should be self-contained.
 
 ## Contents
 
-| Category                      | Topic     | Exercise                                               |
-| ----------------------------- | --------- | ------------------------------------------------------ |
-| Imperative programming \[^2\] | Base      | [Date Checker](date-checker)                           |
-|                               |           | [Print Rectangle](print-rectangle)                     |
-|                               |           | [Second Grade Equations](second-grade-eq)              |
-|                               |           | [Weighted Average](weighted-average)                   |
-|                               | Array     | [Search Date](search-date)                             |
-|                               |           | [Strings Array](strings-array)                         |
-|                               |           | [Dynamic Array](dynamic-array)                         |
-|                               |           | [Check Sorted](check-sorted)                           |
-|                               |           | [Array Analysis](array-analysis)                       |
-|                               | File      | [File Splitter](file-splitter)                         |
-|                               | Struct    | [Football Betting](football-betting)                   |
-|                               |           | [ADT Optional Int](optional-int-adt--struct)           |
-|                               | Math      | [Galton Machine](galton-machine)                       |
-|                               |           | [Smallest Multiple](smallest-multiple)                 |
-|                               |           | [Big Integer](big-integer)                             |
-|                               |           | [Thousandth Pair Primes](thousandth-pair-primes)       |
-|                               | Recursion | [Num Word](num-word)                                   |
-|                               | Projects  | [Snake](snake)                                         |
-|                               |           | [Binary String Transmitter](binary-string-transmitter) |
-|                               |           | [Battleship](battleship)                               |
-| OOP programming               |           | [Library](library-oop)                                 |
-|                               |           | [Matrix](matrix-oop)                                   |
-|                               |           | [Strongbox](strongbox-oop)                             |
-|                               |           | [Binary Criteria](binary-criteria-oop) \[^1\]          |
-|                               |           | [Metric Conversion](metric-conversions-oop) \[^1\]     |
-|                               |           | [Geometric Drawer](geometric-drawer-oop) \[^1\]        |
-| Web Programming               | Projects  | [Acme Missiles: Falcon-10](acme-website-falcon10)      |
-|                               |           | [Solar System Simulation](solar-system-simulation)     |
+| Category                      | Topic     | Exercise                                                 |
+| ----------------------------- | --------- | -------------------------------------------------------- |
+| Imperative programming \[^2\] | Base      | [Date Checker](date-checker)                             |
+|                               |           | [Print Rectangle](print-rectangle)                       |
+|                               |           | [Second Grade Equations](second-grade-eq)                |
+|                               |           | [Weighted Average](weighted-average)                     |
+|                               | Array     | [Search Date](search-date)                               |
+|                               |           | [Strings Array](strings-array)                           |
+|                               |           | [Dynamic Array](dynamic-array)                           |
+|                               |           | [Check Sorted](check-sorted)                             |
+|                               |           | [Array Analysis](array-analysis)                         |
+|                               | File      | [File Splitter](file-splitter)                           |
+|                               | Struct    | [Football Betting](football-betting)                     |
+|                               |           | [ADT Optional Int](optional-int-adt--struct)             |
+|                               | Math      | [Galton Machine](galton-machine)                         |
+|                               |           | [Smallest Multiple](smallest-multiple)                   |
+|                               |           | [Big Integer](big-integer)                               |
+|                               |           | [Thousandth Pair Primes](thousandth-pair-primes)         |
+|                               |           | [Largest Palindrome Product](largest-palindrome-product) |
+|                               | Recursion | [Num Word](num-word)                                     |
+|                               | Projects  | [Snake](snake)                                           |
+|                               |           | [Binary String Transmitter](binary-string-transmitter)   |
+|                               |           | [Battleship](battleship)                                 |
+| OOP programming               |           | [Library](library-oop)                                   |
+|                               |           | [Matrix](matrix-oop)                                     |
+|                               |           | [Strongbox](strongbox-oop)                               |
+|                               |           | [Binary Criteria](binary-criteria-oop) \[^1\]            |
+|                               |           | [Metric Conversion](metric-conversions-oop) \[^1\]       |
+|                               |           | [Geometric Drawer](geometric-drawer-oop) \[^1\]          |
+| Web Programming               | Projects  | [Acme Missiles: Falcon-10](acme-website-falcon10)        |
+|                               |           | [Solar System Simulation](solar-system-simulation)       |
 
 \[^1\]: also with inheritance \[^2\]: imperative and procedural
 programming
