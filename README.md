@@ -46,6 +46,7 @@ description should be self-contained.
 |                               |            | [Binary Criteria](binary-criteria-oop) \[^1\]            |
 |                               |            | [Metric Conversion](metric-conversions-oop) \[^1\]       |
 |                               |            | [Geometric Drawer](geometric-drawer-oop) \[^1\]          |
+|                               |            | [Car Class](car-class)                                   |
 | Web Programming               | Projects   | [Acme Missiles: Falcon-10](acme-website-falcon10)        |
 |                               |            | [Solar System Simulation](solar-system-simulation)       |
 |                               |            | [Connect 4](connect-4)                                   |
