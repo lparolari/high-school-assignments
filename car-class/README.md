@@ -25,9 +25,9 @@ La classe inoltre realizza le seguenti funzionalità.
   litri di carburante.
 
 - Viaggiare per _n_ chilometri. L'automobile viaggia per _n_
-  chilometri e consuma $n * kl$ dove $kl$ è il numero di chilometri
-  effettuati con un litro, specificato durante la creazione della
-  macchina.
+  chilometri e consuma $n / kl$ litri di carburante, dove $kl$ è il
+  numero di chilometri effettuati con un litro, specificato durante la
+  creazione della macchina.
 
 - Vedere il numero di chilometri percorsi $kp$.
 
@@ -42,25 +42,28 @@ alfa.viaggia(20);
 std::cout << alfa.carburante() << std::endl; // 26
 alfa.riempi();
 alfa.viaggia(30);
-std::cout << alfa.carburante() << std::endl; // 24
+std::cout << alfa.carburante() << std::endl;  // 24
 std::cout << alfa.km_percorsi() << std::endl; // 50
+alfa.viaggia(140);
+std::cout << alfa.carburante() << std::endl;  // 0
+std::cout << alfa.km_percorsi() << std::endl; // 170
 
 bmw.viaggia(80);
-std::cout << bmw.carburante() << std::endl; // 20
+std::cout << bmw.carburante() << std::endl;  // 20
 std::cout << bmw.km_percorsi() << std::endl; // 0
 bmw.accendi();
 bmw.viaggia(80);
 bmw.accendi();
 bmw.viaggia(80);
-std::cout << bmw.carburante() << std::endl; // 12
+std::cout << bmw.carburante() << std::endl;  // 12
 std::cout << bmw.km_percorsi() << std::endl; // 160
 bmw.spegni();
 bmw.viaggia(80);
-std::cout << bmw.carburante() << std::endl; // 12
+std::cout << bmw.carburante() << std::endl;  // 12
 std::cout << bmw.km_percorsi() << std::endl; // 160
 ```
 
-## Estension1
+## Estensioni
 
 1. Ottenere i dettagli dell'auto. Consente di ottenere una stringa
    specifica quanti chilometri sono stati percorsi dall'auto e
