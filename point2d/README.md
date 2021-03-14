@@ -40,8 +40,7 @@ La classe `Vettore` presenta le seguenti funzionalità:
 - creazione di un punto 3D date le componenti $x$, $y$ e $z$;
 
 - creazione di un punto $n$-dimensionale data una collezione di $n$
-  componenti. Prevedere _opzionalmente_ due funzioni di utilità
-  esterne alla classe per creare un punto 2D e un punto 3D;
+  componenti;
 
 - creazione di una copia (profonda) del vettore;
 
