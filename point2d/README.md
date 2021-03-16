@@ -66,7 +66,7 @@ La classe `Vettore` presenta le seguenti funzionalità:
   $\boldsymbol{p}$ e $\boldsymbol{q}$ in $\mathbb{R}^n$, il loro
   prodotto è un nuovo vettore definito come
 
-  $$\boldsymbol{p} + \boldsymbol{q} = (p_1 * q_1, p_2 * q_2, \ldots, p_n * q_n);$$
+  $$\boldsymbol{p} * \boldsymbol{q} = (p_1 * q_1, p_2 * q_2, \ldots, p_n * q_n);$$
 
 - calcolo della $p$-esima norma del vettore. Di default, se non
   specificato, viene calcolata la norma 2 ($p = 2$). Dato un vettore
