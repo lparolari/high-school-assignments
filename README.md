@@ -52,6 +52,7 @@ description should be self-contained.
 |                               |            | [Connect 4](connect-4)                                   |
 |                               | Node       | [Log Processing](log-processing)                         |
 | Quiz \[^3\]                   |            | [Class](class-quiz)                                      |
+|                               |            | [Automata](automata-quiz)                                |
 | Lectures                      | Node       | [Temperature Sensor](temperature-sensor)                 |
 
 \[^1\]: also with inheritance \
