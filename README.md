@@ -53,6 +53,7 @@ description should be self-contained.
 |                               | Node       | [Log Processing](log-processing)                         |
 | Quiz \[^3\]                   |            | [Class](class-quiz)                                      |
 |                               |            | [Automata](automata-quiz)                                |
+|                               |            | [Functions](functions-quiz)                              |
 | Lectures                      | Node       | [Temperature Sensor](temperature-sensor)                 |
 
 \[^1\]: also with inheritance \
