@@ -53,14 +53,14 @@ description should be self-contained.
 |                               |             | [Solar System Simulation](solar-system-simulation)       |
 |                               |             | [Connect 4](connect-4)                                   |
 |                               | Node        | [Log Processing](log-processing)                         |
-| Quiz \[^3\]                   |             | [Class](class-quiz)                                      |
+| Quiz                          |             | [Class](class-quiz)                                      |
 |                               |             | [Automata](automata-quiz)                                |
 |                               |             | [Functions](functions-quiz)                              |
+|                               |             | [Turing Machine](turing-machine-quiz)                    |
 | Lectures                      | Node        | [Temperature Sensor](temperature-sensor)                 |
 
 \[^1\]: also with inheritance \
-\[^2\]: imperative and procedural programming \
-\[^3\]: code snippets
+\[^2\]: imperative and procedural programming
 
 ## Installation
 
