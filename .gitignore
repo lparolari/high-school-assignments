@@ -9,3 +9,5 @@
 .venv/
 
 **/latexdockercmd.sh
+
+.vscode
