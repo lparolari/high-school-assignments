@@ -8,54 +8,55 @@ description should be self-contained.
 
 ## Contents
 
-| Category                      | Topic        | Exercise                                                 |
-| ----------------------------- | ------------ | -------------------------------------------------------- |
-| Imperative programming \[^2\] | Base         | [Date Checker](date-checker)                             |
-|                               |              | [Print Rectangle](print-rectangle)                       |
-|                               |              | [Second Grade Equations](second-grade-eq)                |
-|                               |              | [Weighted Average](weighted-average)                     |
-|                               | Functions    | [Time To Ground](time-to-ground)                         |
-|                               | Array        | [Search Date](search-date)                               |
-|                               |              | [Strings Array](strings-array)                           |
-|                               |              | [Dynamic Array](dynamic-array)                           |
-|                               |              | [Check Sorted](check-sorted)                             |
-|                               |              | [Array Analysis](array-analysis)                         |
-|                               | Tables       | [Visits Table](visits-table)                             |
-|                               | Struct       | [Football Betting](football-betting)                     |
-|                               |              | [ADT Optional Int](optional-int-adt--struct)             |
-|                               |              | [Queue](queue--struct)                                   |
-|                               | File         | [File Splitter](file-splitter)                           |
-|                               | Math         | [Galton Machine](galton-machine)                         |
-|                               |              | [Smallest Multiple](smallest-multiple)                   |
-|                               |              | [Big Integer](big-integer)                               |
-|                               |              | [Thousandth Pair Primes](thousandth-pair-primes)         |
-|                               |              | [Frac Lowest Terms](frac-lowest-terms)                   |
-|                               |              | [Largest Palindrome Product](largest-palindrome-product) |
-|                               | Recursion    | [Num Word](num-word)                                     |
-|                               | Projects     | [Snake](snake)                                           |
-|                               |              | [Binary String Transmitter](binary-string-transmitter)   |
-|                               |              | [Battleship](battleship)                                 |
-|                               | Dyn Mem      | [Linked List](linked-list)                               |
-|                               |              | [Queue](queue--dynamic-memory)                           |
-|                               |              | [Binary Tree](binary-tree--dynamic-memory)               |
-|                               |              | [Binary Tree - Operations](binary-tree--operations)      |
-| Functional programming        | High-Order   | [Conversion To Basis](conversion-to-basis)               |
-| OOP programming               |              | [Library](library-oop)                                   |
-|                               |              | [Matrix](matrix-oop)                                     |
-|                               |              | [Strongbox](strongbox-oop)                               |
-|                               |              | [Binary Criteria](binary-criteria-oop) \[^1\]            |
-|                               |              | [Metric Conversion](metric-conversions-oop) \[^1\]       |
-|                               |              | [Geometric Drawer](geometric-drawer-oop) \[^1\]          |
-|                               |              | [Car Class](car-class)                                   |
-|                               | Polymorphism | [Employees](employees)                                   |
-| Web Programming               | Projects     | [Acme Missiles: Falcon-10](acme-website-falcon10)        |
-|                               |              | [Solar System Simulation](solar-system-simulation)       |
-|                               |              | [Connect 4](connect-4)                                   |
-|                               | Node         | [Log Processing](log-processing)                         |
-| Quiz \[^3\]                   |              | [Class](class-quiz)                                      |
-|                               |              | [Automata](automata-quiz)                                |
-|                               |              | [Functions](functions-quiz)                              |
-| Lectures                      | Node         | [Temperature Sensor](temperature-sensor)                 |
+| Category                      | Topic       | Exercise                                                 |
+| ----------------------------- | ----------- | -------------------------------------------------------- |
+| Imperative programming \[^2\] | Base        | [Date Checker](date-checker)                             |
+|                               |             | [Print Rectangle](print-rectangle)                       |
+|                               |             | [Second Grade Equations](second-grade-eq)                |
+|                               |             | [Weighted Average](weighted-average)                     |
+|                               | Functions   | [Time To Ground](time-to-ground)                         |
+|                               | Array       | [Search Date](search-date)                               |
+|                               |             | [Strings Array](strings-array)                           |
+|                               |             | [Dynamic Array](dynamic-array)                           |
+|                               |             | [Check Sorted](check-sorted)                             |
+|                               |             | [Array Analysis](array-analysis)                         |
+|                               | Tables      | [Visits Table](visits-table)                             |
+|                               | Struct      | [Football Betting](football-betting)                     |
+|                               |             | [ADT Optional Int](optional-int-adt--struct)             |
+|                               |             | [Queue](queue--struct)                                   |
+|                               | File        | [File Splitter](file-splitter)                           |
+|                               | Math        | [Galton Machine](galton-machine)                         |
+|                               |             | [Smallest Multiple](smallest-multiple)                   |
+|                               |             | [Big Integer](big-integer)                               |
+|                               |             | [Thousandth Pair Primes](thousandth-pair-primes)         |
+|                               |             | [Frac Lowest Terms](frac-lowest-terms)                   |
+|                               |             | [Largest Palindrome Product](largest-palindrome-product) |
+|                               | Recursion   | [Num Word](num-word)                                     |
+|                               | Projects    | [Snake](snake)                                           |
+|                               |             | [Binary String Transmitter](binary-string-transmitter)   |
+|                               |             | [Battleship](battleship)                                 |
+|                               | Dyn Mem     | [Linked List](linked-list)                               |
+|                               |             | [Queue](queue--dynamic-memory)                           |
+|                               |             | [Binary Tree](binary-tree--dynamic-memory)               |
+|                               |             | [Binary Tree - Operations](binary-tree--operations)      |
+| Functional programming        | High-Order  | [Conversion To Basis](conversion-to-basis)               |
+| OOP programming               |             | [Library](library-oop)                                   |
+|                               |             | [Matrix](matrix-oop)                                     |
+|                               |             | [Strongbox](strongbox-oop)                               |
+|                               |             | [Binary Criteria](binary-criteria-oop) \[^1\]            |
+|                               |             | [Metric Conversion](metric-conversions-oop) \[^1\]       |
+|                               |             | [Geometric Drawer](geometric-drawer-oop) \[^1\]          |
+|                               |             | [Car Class](car-class)                                   |
+| Polymorphism                  | Inheritance | [Employees](employees)                                   |
+|                               |             | [Painting Shapes](painting-shapes)                       |
+| Web Programming               | Projects    | [Acme Missiles: Falcon-10](acme-website-falcon10)        |
+|                               |             | [Solar System Simulation](solar-system-simulation)       |
+|                               |             | [Connect 4](connect-4)                                   |
+|                               | Node        | [Log Processing](log-processing)                         |
+| Quiz \[^3\]                   |             | [Class](class-quiz)                                      |
+|                               |             | [Automata](automata-quiz)                                |
+|                               |             | [Functions](functions-quiz)                              |
+| Lectures                      | Node        | [Temperature Sensor](temperature-sensor)                 |
 
 \[^1\]: also with inheritance \
 \[^2\]: imperative and procedural programming \
