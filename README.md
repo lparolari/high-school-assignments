@@ -39,6 +39,7 @@ description should be self-contained.
 |                               |             | [Queue](queue--dynamic-memory)                           |
 |                               |             | [Binary Tree](binary-tree--dynamic-memory)               |
 |                               |             | [Binary Tree - Operations](binary-tree--operations)      |
+|                               | Vectors     | [Queue - Vector](queue-vector)                           |
 | Functional programming        | High-Order  | [Conversion To Basis](conversion-to-basis)               |
 | OOP programming               |             | [Library](library-oop)                                   |
 |                               |             | [Matrix](matrix-oop)                                     |
