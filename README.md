@@ -50,6 +50,7 @@ description should be self-contained.
 |                               |             | [Car Class](car-class)                                   |
 | Polymorphism                  | Inheritance | [Employees](employees)                                   |
 |                               |             | [Painting Shapes](painting-shapes)                       |
+|                               |             | [Polymorphic Questions](polymorphic-questions)           |
 | Web Programming               | Projects    | [Acme Missiles: Falcon-10](acme-website-falcon10)        |
 |                               |             | [Solar System Simulation](solar-system-simulation)       |
 |                               |             | [Connect 4](connect-4)                                   |
