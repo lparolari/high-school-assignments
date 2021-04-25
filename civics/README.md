@@ -1,6 +1,6 @@
 # Approfondimento di Educazione Civica Digitale
 
-> INTRO
+> TODO: scrivere INTRO
 
 Approfondire una delle seguenti tematiche in maniera critica.
 
@@ -18,7 +18,19 @@ indicativamente 15 minuti (strict!) a gruppo
 - presentazione
 - video
 - sito web
-- STRUMENTI TEAMS: vedere slide
+- TODO: STRUMENTI TEAMS: vedere slide
+
+RIFLESSIONE esperienza al macrotema che hanno scelto
+
+TODO: griglia di valutazione
+
+- presaentazione
+- approfondimento
+- critica
+- creatività
+
+TODO: aggiungere i video da guardare come input e usarli come punto di
+parteenza (the social dilemma in `cs-golgi`)
 
 # Internet e il cambiamento in corso: architettura, diritti, ecologia
 
