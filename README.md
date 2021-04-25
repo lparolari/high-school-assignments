@@ -60,6 +60,7 @@ description should be self-contained.
 |                               |             | [Functions](functions-quiz)                              |
 |                               |             | [Turing Machine](turing-machine-quiz)                    |
 | Lectures                      | Node        | [Temperature Sensor](temperature-sensor)                 |
+| Civics                        | Project     | [Civics](civics)                                         |
 
 \[^1\]: also with inheritance \
 \[^2\]: imperative and procedural programming
