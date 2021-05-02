@@ -2,10 +2,29 @@
 
 # Temi
 
-TODO: aggiungere i video da guardare come input e usarli come punto di
-parteenza (the social dilemma in `cs-golgi`)
+Ogni tema è affiancato da una descrizione presa da
+[3](https://www.generazioniconnesse.it/site/_file/documenti/ECD/ECD-sillabo.pdf)
+e da una serie di clip estrapolate dal film The Social Dilemma.
 
-# Internet e il cambiamento in corso: architettura, diritti, ecologia
+Purtroppo, ho notato alcuni errori di taglio nelle clip, e spesso si
+perdono alcune parole iniziali. Per questo motivo riporto un link al
+[film integrale](TODO), tramite il quale potete ricercare la clip di
+interese.
+
+Ad ogni modo, consiglio la visione dell'intero film anche per cultura
+personale.
+
+## Internet e il cambiamento in corso: architettura, diritti, ecologia
+
+> [Video 01](https://drive.google.com/file/d/1dnVMhOpXfHaNCSYLnI3zZZM1bN1FB1LN/view?usp=sharing),
+> [Video 02](https://drive.google.com/file/d/1oeW_wXXhVYS67L-CPhHGr4gzqb39lHTA/view?usp=sharing),
+> [Video 03](https://drive.google.com/file/d/1YDHnw9JQtSMW03POA_U46XXTogxpVhVQ/view?usp=sharing),
+> [Video 07](https://drive.google.com/file/d/14LMIeHjxYIRfh7R4dbbeKB0QzH1L-sxz/view?usp=sharing),
+> [Video 08](https://drive.google.com/file/d/1QA7WCiFVtkhn-Z3Id4fkdShR56Jg3HVT/view?usp=sharing),
+> [Video 10](https://drive.google.com/file/d/1g4y1VxqJc_GJuW7B3C-ztea_UbEEcYuI/view?usp=sharing),
+> [Video 14](https://drive.google.com/file/d/1U7hzPOe57DSt9n-UIzQ_fPm7fhcOXInw/view?usp=sharing),
+> [Video 15](https://drive.google.com/file/d/1w9geEjytmB7_46LOwEiHtEoVwLbAcSDA/view?usp=sharing),
+> [Video 16](https://drive.google.com/file/d/1qz2-Jk3kAOFgfAO4S3ZmnnCCL7I4KuXF/view?usp=sharing)
 
 Internet è una delle più straordinarie innovazioni del nostro tempo, e
 possibilmente una tra le innovazioni che hanno generato l'impatto più
@@ -13,31 +32,40 @@ importante per il genere umano.
 
 Per caratteristiche architetturali, pervasività e ruolo in società,
 Internet non può essere considerato un medium come gli altri. È per
-questo fondamentale conoscere **storia**, **architettura** e
-**principi fondativi** di Internet, e osservare come questi siano
-stati mantenuti o messi in discussione dalla straordinaria diffusione
-di una delle sue più importanti applicazioni – il Web – con i suoi
-giganti, e la rapida espansione dei social media.
+questo fondamentale conoscere storia, architettura e principi
+fondativi di Internet, e osservare come questi siano stati mantenuti o
+messi in discussione dalla straordinaria diffusione di una delle sue
+più importanti applicazioni – il Web – con i suoi giganti, e la rapida
+espansione dei social media.
 
 Comprendere l'architettura di Internet, metafora del cambiamento
 culturale del nostro tempo, implica conoscere, tra le altre cose, il
-valore e le implicazioni del concetto di **neutralità della Rete** e
-le sfide dell'**Internet governance**, ossia dei meccanismi
-decisionali e dei codici alla base del suo funzionamento e le
-implicazioni che questi hanno sul modo in cui avvengono le interazioni
-online e sono distribuiti e rappresentati i contenuti.
+valore e le implicazioni del concetto di neutralità della Rete e le
+sfide dell'Internet governance, ossia dei meccanismi decisionali e dei
+codici alla base del suo funzionamento e le implicazioni che questi
+hanno sul modo in cui avvengono le interazioni online e sono
+distribuiti e rappresentati i contenuti.
 
-La pervasività e generatività\* della Rete – e la straordinaria
+La pervasività e generatività della Rete – e la straordinaria
 centralità delle tecnologie digitali ad essa associate – sollevano
 molte questioni, a partire da quelle relative all'espansione della
-sfera dei **Diritti in Internet**. La sfida riguarda gli ordinamenti
-sia a livello globale sia nazionale, con riferimento a nuove
-dimensioni di concetti noti (ad esempio domicilio, proprietà,
-riservatezza, privative d'autore), che ha portato alla produzione di
-importanti documenti quale la Dichiarazione per i Diritti in Internet,
-prodotta nel 2014 dal Parlamento Italiano.
+sfera dei Diritti in Internet. La sfida riguarda gli ordinamenti sia a
+livello globale sia nazionale, con riferimento a nuove dimensioni di
+concetti noti (ad esempio domicilio, proprietà, riservatezza,
+privative d'autore), che ha portato alla produzione di importanti
+documenti quale la Dichiarazione per i Diritti in Internet, prodotta
+nel 2014 dal Parlamento Italiano.
 
-# Educazione ai media: ordientarsi e comportarsi in una società mediatizzata
+## Educazione ai media: ordientarsi e comportarsi in una società mediatizzata
+
+> [Video 01](https://drive.google.com/file/d/1dnVMhOpXfHaNCSYLnI3zZZM1bN1FB1LN/view?usp=sharing),
+> [Video 04](https://drive.google.com/file/d/1o005v7Dy2zPW-hKjOcVG7qgk1Yd9qgGd/view?usp=sharing),
+> [Video 05](https://drive.google.com/file/d/1jA18Rxg_lHWzFHI0-DFe8LHYT5qZ04Iz/view?usp=sharing),
+> [Video 06](https://drive.google.com/file/d/1SwISH_tvquInkLnq75TDQbGNz6e_osj4/view?usp=sharing),
+> [Video 08](https://drive.google.com/file/d/1QA7WCiFVtkhn-Z3Id4fkdShR56Jg3HVT/view?usp=sharing),
+> [Video 09](https://drive.google.com/file/d/1QnlGL6_mFRXeY9mTLqflHRjgVGXg3J0b/view?usp=sharing),
+> [Video 10](https://drive.google.com/file/d/1g4y1VxqJc_GJuW7B3C-ztea_UbEEcYuI/view?usp=sharing),
+> [Video 16](https://drive.google.com/file/d/1qz2-Jk3kAOFgfAO4S3ZmnnCCL7I4KuXF/view?usp=sharing)
 
 Viviamo in una società fortemente mediatizzata. Il passaggio dai mass
 media ai cosiddetti nuovi media e successivamente ai social media ha
@@ -47,27 +75,20 @@ profonde su tutte le dimensioni dell'agire umano: l'individuo, la
 socialità e i rapporti intergenerazionali, ad esempio.
 
 Le tecnologie dell'informazione e delle comunicazioni, analogiche o
-digitali, non hanno di per sé una connotazione positiva o negativa*: è
+digitali, non hanno di per sé una connotazione positiva o negativa: è
 però indispensabile tenere conto del loro impatto per una piena
 comprensione dell'essere individui, collettività e società nel 21mo
 secolo. L'educazione ai media passa prima di tutto dalla comprensione
 della storia, evoluzione e cultura dei media, anche per evidenziarne
-tratti comuni, specificità e differenze*, ad esempio con riferimento a
+tratti comuni, specificità e differenze, ad esempio con riferimento a
 come cambiano i codici comunicativi con il digitale.
-
-I media sono sia strumento di comunicazione che oggetto culturale, e
-come tali possono essere affrontati e sfruttati anche nell'attività
-didattica.
-
-Parlare di educazione ai media significa affrontare diverse
-dimensioni.
 
 **La dimensione dell'individuo: identità e rappresentazione.** È
 fondamentale maturare la capacità di riflettere autonomamente sul
 rapporto tra sfera pubblica e sfera privata, sul tema della
-riservatezza (privacy)\* come protezione della propria e il rispetto
-dell'altrui, e sul concetto di "traccia digitale"\* (digital
-footprint) generata in Rete e attraverso diverse tecnologie.
+riservatezza (privacy) come protezione della propria e il rispetto
+dell'altrui, e sul concetto di "traccia digitale" (digital footprint)
+generata in Rete e attraverso diverse tecnologie.
 
 Occorre inoltre comprendere i meccanismi alla base della propria
 identità (online e offline), anche affrontando criticamente il tema
@@ -97,7 +118,11 @@ generazionale, e il ruolo della scuola nella costruzione di strategie
 costruttive nel quadro del rapporto tra studenti e proprie famiglie,
 tra studenti e adulti.
 
-# Educazione all'informazione: cercare, analizzare e utilizzare correttamente l'informazione
+## Educazione all'informazione: cercare, analizzare e utilizzare correttamente l'informazione
+
+> [Video 01](https://drive.google.com/file/d/1dnVMhOpXfHaNCSYLnI3zZZM1bN1FB1LN/view?usp=sharing),
+> [Video 13](https://drive.google.com/file/d/1wemTPsvY5MmOOFzk2guLPJdGq6qFyFro/view?usp=sharing),
+> [Video 16](https://drive.google.com/file/d/1qz2-Jk3kAOFgfAO4S3ZmnnCCL7I4KuXF/view?usp=sharing)
 
 La rivoluzione ambientale corrente è simbolicamente rappresentata
 dall'infosfera (Floridi, 2017), ossia lo spazio semantico costituito
@@ -118,7 +143,7 @@ Biblioteche, archivi fisici e digitali e altre raccolte di informazioni,
 ad esempio legate al nostro patrimonio culturale e alla nostra produzione
 culturale, rappresentano alcuni di questi esempi.
 
-Altra competenza riguarda la consapevolezza dei principi normativi\*,
+Altra competenza riguarda la consapevolezza dei principi normativi,
 incluse le ragioni alla base dell'accesso e del riuso
 dell'informazione: ciò include conoscere la storia e l'evoluzione dei
 principali modelli tradizionali e alternativi delle privative
@@ -151,7 +176,15 @@ valorizzazione del patrimonio informativo pubblico, sia per scopi
 civici (monitoraggio, apertura, open government e civic hacking) sia
 commerciali.
 
-# Dati e intelligenza artificiale: capirne il ruolo, il valore, i rischi e le implicazioni
+## Dati e intelligenza artificiale: capirne il ruolo, il valore, i rischi e le implicazioni
+
+> [Video 01](https://drive.google.com/file/d/1dnVMhOpXfHaNCSYLnI3zZZM1bN1FB1LN/view?usp=sharing),
+> [Video 02](https://drive.google.com/file/d/1oeW_wXXhVYS67L-CPhHGr4gzqb39lHTA/view?usp=sharing),
+> [Video 11](https://drive.google.com/file/d/1loD0D849PUAAHAVLDK-b537M3rgw6tcB/view?usp=sharing),
+> [Video 12](https://drive.google.com/file/d/1O8H2aNaoptIBjIskcT_nPdE2xW5mj-8r/view?usp=sharing),
+> [Video 14](https://drive.google.com/file/d/1U7hzPOe57DSt9n-UIzQ_fPm7fhcOXInw/view?usp=sharing),
+> [Video 15](https://drive.google.com/file/d/1w9geEjytmB7_46LOwEiHtEoVwLbAcSDA/view?usp=sharing),
+> [Video 16](https://drive.google.com/file/d/1qz2-Jk3kAOFgfAO4S3ZmnnCCL7I4KuXF/view?usp=sharing)
 
 La conversione digitale di qualunque informazione, dato e relazione
 tra questi ha prodotto l'esplosione nella quantificazione di ogni
@@ -194,11 +227,15 @@ infine, si fondano sullo sviluppo di strategie attive di difesa
 (cybersecurity) e la sperimentazione di nuovi paradigmi di fiducia
 (es. attraverso la tecnologia blockchain).
 
-\* portare un esempio di AI che apprende dai dati con bias
+## Cultura e creatività digitale: stare in rete è anche un atto culturale
 
-# Cultura e creatività digitale: stare in rete è anche un atto culturale
-
-> Q: Unicità dei file e delle cose in rete
+> [Video 01](https://drive.google.com/file/d/1dnVMhOpXfHaNCSYLnI3zZZM1bN1FB1LN/view?usp=sharing),
+> [Video 08](https://drive.google.com/file/d/1QA7WCiFVtkhn-Z3Id4fkdShR56Jg3HVT/view?usp=sharing),
+> [Video 09](https://drive.google.com/file/d/1QnlGL6_mFRXeY9mTLqflHRjgVGXg3J0b/view?usp=sharing),
+> [Video 10](https://drive.google.com/file/d/1g4y1VxqJc_GJuW7B3C-ztea_UbEEcYuI/view?usp=sharing),
+> [Video 14](https://drive.google.com/file/d/1U7hzPOe57DSt9n-UIzQ_fPm7fhcOXInw/view?usp=sharing),
+> [Video 15](https://drive.google.com/file/d/1w9geEjytmB7_46LOwEiHtEoVwLbAcSDA/view?usp=sharing),
+> [Video 16](https://drive.google.com/file/d/1qz2-Jk3kAOFgfAO4S3ZmnnCCL7I4KuXF/view?usp=sharing)
 
 Internet, i media digitali, e con essi i social media, non sono solo
 strumenti. Sono anche in grado di abilitare nuove produzioni
@@ -340,8 +377,15 @@ l'esposizione (si veda la sezione [Esposizione](#esposizione)).
 # Fonti
 
 1. [Ministero dell'Istruzione, _L'Educazione Civica: un percorso per formare cittadini responsabili_](https://www.istruzione.it/educazione_civica/)
+
 2. [Safer Internet Center, _Educazione Civica Digitale_](https://www.generazioniconnesse.it/site/it/educazione-civica-digitale/)
+
 3. [Safer Internet Center, _Educazione Civica Digitale: il Sillabo per Orientarsi_](https://www.generazioniconnesse.it/site/_file/documenti/ECD/ECD-sillabo.pdf)
+
 4. [Cremit, _Educazione Civica Digitale: il Sillabo per Orientarsi_](https://www.cremit.it/educazione-civica-digitale-il-sillabo-per-orientarsi/)
+
 5. [Accademia Civica Digitale, _Definizione di Educazione Civica Digitale_](https://www.accademiacivicadigitale.org/educazione-civica-digitale-definizione/)
+
 6. [Loescher Editore video, _Webinar per la didattica a distanza - Educazione alla cittadinanza digitale_](https://youtu.be/1oVVfD9Pk9U)
+
+7. [The Social Dilemma, _The Social Dilemma_](https://www.thesocialdilemma.com/)
