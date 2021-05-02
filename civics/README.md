@@ -1,18 +1,68 @@
 # Approfondimento di Educazione Civica Digitale
 
+Le parole chiave dell'educazione civica digitale sono: spirito critico
+e responsabilità.
+
+Spirito critico, perché è fondamentale essere pienamente consapevoli
+che dietro a straordinarie potenzialità per il genere umano legate
+alla tecnologia si celano profonde implicazioni sociali, culturali ed
+etiche. Lo spirito critico è condizione necessaria per "governare" il
+cambiamento tecnologico e per orientarlo verso obiettivi sostenibili
+per la nostra società.
+
+Responsabilità, perché i media digitali, nella loro caratteristica di
+dispositivi non solo di fruizione ma anche di produzione e di
+pubblicazione dei messaggi, richiamano chi li usa a considerare gli
+effetti di quanto attraverso di essi vanno facendo.
+
+Dalla spirito critico e dalla responsabilità deriva la capacità di
+saper massimizzare le potenzialità della tecnologia (ad es. in termini
+di educazione, partecipazione, creatività e socialità) e minimizzare
+quelli negativi (ad es. in termini di sfruttamento commerciale,
+violenza, comportamenti illegali, informazione manipolata e
+discriminatoria).
+
+Lo sviluppo di una piena cittadinanza digitale passa anche e
+soprattutto dalla capacità degli studenti di appropriarsi dei media
+digitali, passando da consumatori passivi a consumatori critici e
+produttori responsabili di contenuti e nuove architetture.
+
+Il documento è articolato come segue. La sezione [Temi](#temi)
+presenta le possibili macroaree di approfondimento fondendo spunti sia
+tramite un'ampia descrizione, sia tramite delle clip tratte dal film
+_The Social Dilemma_. La sezione
+[Istruzioni operative](#istruzioni-operative) invece illustra la
+consegna mostrando le possibile modalità di svolgimento del lavoro,
+tipologia di lavoro, e valutazione.
+
+# Sommario
+
+- [Temi](#temi)
+  - [Internet e il cambiamento in corso: architettura, diritti, ecologia](#internet-e-il-cambiamento-in-corso--architettura--diritti--ecologia)
+  - [Educazione ai media: ordientarsi e comportarsi in una società mediatizzata](#educazione-ai-media--ordientarsi-e-comportarsi-in-una-societ--mediatizzata)
+  - [Educazione all'informazione: cercare, analizzare e utilizzare correttamente l'informazione](#educazione-all-informazione--cercare--analizzare-e-utilizzare-correttamente-l-informazione)
+  - [Dati e intelligenza artificiale: capirne il ruolo, il valore, i rischi e le implicazioni](#dati-e-intelligenza-artificiale--capirne-il-ruolo--il-valore--i-rischi-e-le-implicazioni)
+  - [Cultura e creatività digitale: stare in rete è anche un atto culturale](#cultura-e-creativit--digitale--stare-in-rete---anche-un-atto-culturale)
+- [Istruzioni operative](#istruzioni-operative)
+  - [Gruppi](#gruppi)
+  - [Modalità](#modalit-)
+  - [Esposizione](#esposizione)
+  - [Valutazione](#valutazione)
+- [Fonti](#fonti)
+
 # Temi
 
-Ogni tema è affiancato da una descrizione presa da
-[3](https://www.generazioniconnesse.it/site/_file/documenti/ECD/ECD-sillabo.pdf)
-e da una serie di clip estrapolate dal film The Social Dilemma.
+Ogni tema è affiancato da una descrizione presa dal sillabo
+sull'educazione civica digitale
+\[[3](https://www.generazioniconnesse.it/site/_file/documenti/ECD/ECD-sillabo.pdf)\]
+e da una serie di clip estrapolate dal film The Social Dilemma
+\[[7](https://www.thesocialdilemma.com/)\].
 
-Purtroppo, ho notato alcuni errori di taglio nelle clip, e spesso si
-perdono alcune parole iniziali. Per questo motivo riporto un link al
-[film integrale](TODO), tramite il quale potete ricercare la clip di
-interese.
-
-Ad ogni modo, consiglio la visione dell'intero film anche per cultura
-personale.
+_Purtroppo, ho notato alcuni errori di taglio nelle clip, e spesso si
+perdono alcune parole iniziali. Per questo motivo riporto anche un
+link al [film integrale](TODO), tramite il quale potete ricercare la
+clip di interese. Ad ogni modo, consiglio la visione dell'intero film
+anche per cultura personale._
 
 ## Internet e il cambiamento in corso: architettura, diritti, ecologia
 
