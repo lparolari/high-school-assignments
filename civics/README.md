@@ -1,33 +1,6 @@
 # Approfondimento di Educazione Civica Digitale
 
-> TODO: scrivere INTRO
-
-Approfondire una delle seguenti tematiche in maniera critica.
-
-TODO: modalità di svolgimento del lavoro
-
-lavoro a gruppi (3/4 pp), artefatto commisurato ai componenti del
-gruppo
-
-indicativamente 15 minuti (strict!) a gruppo
-
-- caso studio fatti accaduti
-- esempi e/o implementazioni dei concetti descritti (ES: algoritmi big
-  data / AI)
-- questionario con dati
-- presentazione
-- video
-- sito web
-- TODO: STRUMENTI TEAMS: vedere slide
-
-RIFLESSIONE esperienza al macrotema che hanno scelto
-
-TODO: griglia di valutazione
-
-- presaentazione
-- approfondimento
-- critica
-- creatività
+# Temi
 
 TODO: aggiungere i video da guardare come input e usarli come punto di
 parteenza (the social dilemma in `cs-golgi`)
@@ -259,6 +232,110 @@ esplorare, in quanto portatrice di nuove opportunità di creatività,
 sia attraverso lo sviluppo di videogiochi a scopo educativo (serious
 gaming) che attraverso l'utilizzo di videogiochi comuni nella pratica
 didattica.
+
+# Istruzioni operative
+
+## Gruppi
+
+Il lavoro deve essere svolto a gruppi di 3/4 persone al massimo. Non
+sono ammessi lavori individuali. Un gruppo di due persone deve essere
+preventivamente comunicato e il tempo a disposizione per la
+presentazione dell'approfondimento (si veda
+[Esposizione](#esposizione)) è ridotto a 10 minuti.
+
+## Modalità
+
+Il lavoro da consegnare consiste in un approfondimento libero su uno
+dei temi presentati alla sezione [Temi](#temi). I temi di
+approfondimento sono soltanto indicativi e, come i video, forniscono
+uno spunto dal quale partire per l'approfondimento. I temi possono
+essere approfonditi sia in maniera verticale che orizzontale: ogni
+singola parola può essere approfondita e ampliata nel suo contesto,
+oltre al fatto che avendo scelto un tema, esso poi può essere
+collegato agli altri e approfondito in maniera trasversale.
+
+L'approfondimento può essere presentato secondo le seguenti modalità.
+
+- _Presentazione_. Consiste nel creare delle "tradizionali" slide da
+  utilizzare a supporto della presentazione.
+
+- _Video_. Consiste nel creare un breve video da presentare e sui cui
+  poter discutere.
+
+- _Sito web_. Consiste nel creare un sito web che possa illustrare
+  l'approfondimento tramite le funzionalità del web, ovvero tramite
+  collegamenti ipertestuali a risorse del web, navigabili con
+  facilità.
+
+- _Caso studio_. Consiste nell'analizzare fatti accaduti realmente
+  correlati al tema scelto.
+
+- _Questionario con dati_. Consiste nel raccogliere dati (da
+  conoscenti e amici, ad esempio) tramite un questionario che indaga
+  un aspetto del tema scelti.
+
+- _Implementazione/studio e presentazione algoritmo di intelligenza
+  artificiale_. Consiste nello studiare, in relazione al tema scelto,
+  un algoritmo di intelligenza artificiale (e/o implementarlo) e
+  presentarne pregi e difetti criticamente.
+
+Le modalità di lavoro non sono esclusive. Ad esempio, potrebbe essere
+comunque comodo avere delle slide da presentare per mostrare i
+risultati raccolti dal questionario.
+
+Se il supporto scelto non è adatto a raccogliere tutto il lavoro
+svolto, può essere integrato con un documento. Ad esempio, si
+potrebbero raccogliere tutte le indagini e considerazioni fatte in un
+documento Word e mettere nelle slide solo quelle più importanti. Si
+tenga conto che tutto il materiale consegnato è condiviso con la
+classe.
+
+L'artefatto prodotto da ogni gruppo, e quindi il lavoro finale, deve
+essere commisurtato al numero di componenti del gruppo. Tutti i
+componenti devo contribuire nella produzione dell'approfondimento.
+
+## Esposizione
+
+Il gruppo deve esporre il lavoro ai compagni in un tempo massimo di 15
+minuti (20 per gruppi di 4 persone). Il limite di tempo deve essere
+rispettato obbligatoriamente, ogni minuto in più costa un -0.25 sul
+voto finale.
+
+L'esposizione non deve essere per forza la proiezione e la descrizione
+delle slide: spazio alla vostra creatività!
+
+## Valutazione
+
+La valutazione dell'elaborato terrà conto dei seguenti aspetti:
+
+- Presentazione orale. Si intende, la presentazione dal punto di vista
+  espositivo, ovvero: padronanza dell'argomento, l'esposizione orale,
+  gestione dei tempi, impatto dell'artefatto, discussione e stimoli
+  creati, ...
+
+- Artefatto prodotto. Ovvero, cosa è stato prodotto durante
+  l'approfondimento, come vi siste documentati e quanto avete prestato
+  attenzione all'annotazione delle fonti e al controllo
+  dell'autorevolezza delle stesse, come si è improntato il lavoro,
+  quanto è orientato al diffondere la conoscenza, semplicità,
+  precisione, ...
+
+- Dettaglio di approfondimento. Ovvero, quanto il tema scelto è stato
+  approfondito e quanto si è indagato a fondo.
+
+- Critica. Si intende, quanto l'argomento è stato affrontato dal punto
+  di vista critico, non limitandosi alla mera esposizione delle
+  informazioni ricavata durante la fase di documentazione.
+
+- Creatività. Ovvero, quanto l'argomento è stato affrontato con
+  creatività e come, sul tema scelto, si è deciso di indagare per
+  estrarre informaizoni con creatività e curiosità.
+
+La valutazione potrebbe essere diversa tra i componenti del gruppo, se
+il contributo del singolo componente non emerge.
+
+La valutazione è influenzata anche dal tempo impiegato durante
+l'esposizione (si veda la sezione [Esposizione](#esposizione)).
 
 # Fonti
 
