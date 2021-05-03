@@ -60,9 +60,12 @@ e da una serie di clip estrapolate dal film The Social Dilemma
 
 _Purtroppo, ho notato alcuni errori di taglio nelle clip, e spesso si
 perdono alcune parole iniziali. Per questo motivo riporto anche un
-link al [film integrale](TODO), tramite il quale potete ricercare la
-clip di interese. Ad ogni modo, consiglio la visione dell'intero film
-anche per cultura personale._
+link al film integrale su
+[Microsoft Stream](https://web.microsoftstream.com/video/d488a37f-c39d-4eec-bcaa-eb14eba02c1d)
+(consigliato) e
+[OneDrive](https://liceogolgibs-my.sharepoint.com/:v:/g/personal/lucaparolari_liceogolgi_edu_it/ESNsDl3_esBLuL8iQis5NGoBON1OG86apLoIOZIvRuIE4A?e=A5Jb7X),
+tramite il quale potete ricercare la clip di interese. Ad ogni modo,
+consiglio la visione dell'intero film anche per cultura personale._
 
 ## Internet e il cambiamento in corso: architettura, diritti, ecologia
 
