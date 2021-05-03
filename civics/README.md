@@ -1,5 +1,15 @@
 # Approfondimento di Educazione Civica Digitale
 
+> Luca Parolari (email:
+> [luca.parolari23@gmail.com](mailto:luca.parolari23@gmail.com),
+> GitHub: [\@lparolari](https://github.com/lparolari), Telegram:
+> [\@lparolari](https://t.me/lparolari)) \
+> Approfondimento di Educazione Civica Digitale
+>
+> Corso di Informatica \
+> Classi 3, 4 e 5 A Liceo Scientifico Scenze Applicate \
+> A.S. 2020/2021
+
 Le parole chiave dell'educazione civica digitale sono: spirito critico
 e responsabilità.
 
