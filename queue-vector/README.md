@@ -201,7 +201,7 @@ int main() {
     visualizza(casse);
     // cassa 1, ancora 2 clienti in attesa: [ 4, 10, ]
     // cassa 2, ancora 3 cliente in attesa: [ 5, 7, 9, ]
-    // cassa 3, ancora 1 clienti in attesa: [ 6, ]
+    // cassa 3, ancora 1 clienti in attesa: [ 8, ]
 }
 ```
 
