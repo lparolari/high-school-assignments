@@ -61,6 +61,12 @@ description should be self-contained.
 |                               |             | [Turing Machine](turing-machine-quiz)                    |
 | Lectures                      | Node        | [Temperature Sensor](temperature-sensor)                 |
 | Civics                        | Project     | [Civics](civics)                                         |
+| Exam 2021                     | Documents   | [Document 1](exam-2021/doc-1.md)                         |
+|                               |             | [Document 2](exam-2021/doc-2.md)                         |
+|                               |             | [Document 3](exam-2021/doc-3.md)                         |
+|                               |             | [Document 4](exam-2021/doc-4.md)                         |
+|                               |             | [Document 5](exam-2021/doc-5.md)                         |
+|                               |             | [Document 6](exam-2021/doc-6.md)                         |
 
 \[^1\]: also with inheritance \
 \[^2\]: imperative and procedural programming
