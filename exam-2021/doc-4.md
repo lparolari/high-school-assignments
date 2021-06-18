@@ -8,13 +8,12 @@ input in un output (con input e output numeri naturali).
 
 Supponiamo inoltre che gli algoritmi che vogliamo trattare rispettino
 i requisiti fondamentali di un algoritmo (essere sequenze finite di
-passi elementari, esiste agente che porta avanti la compiutazione in
-modo meccanico, il calcolo non è probabilistico, ...).
+passi elementari, esiste un agente che porta avanti la compiutazione
+in modo meccanico, il calcolo non è probabilistico, ...).
 
 Da queste assunzioni segue che possiamo _enumerare_ tutti i possibili
-programmi che possiamo scrivere con il nostro formalismo, ovvero
-esiste una corrispondenza biunivoca tra un numero naturale e un
-programma.
+programmi scrivibili con il nostro formalismo, ovvero esiste una
+corrispondenza biunivoca tra un numero naturale e un programma.
 
 Fissiamo un generico programma $P_n$.
 
