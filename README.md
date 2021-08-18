@@ -48,7 +48,8 @@ description should be self-contained.
 |                               |             | [Metric Conversion](metric-conversions-oop) \[^1\]       |
 |                               |             | [Geometric Drawer](geometric-drawer-oop) \[^1\]          |
 |                               |             | [Car Class](car-class)                                   |
-| Polymorphism                  | Inheritance | [Employees](employees)                                   |
+| Polymorphism                  | Inheritance | [Polymorphic Shapes](polymorphic-shapes) (easy)          |
+|                               |             | [Employees](employees)                                   |
 |                               |             | [Painting Shapes](painting-shapes)                       |
 |                               |             | [Polymorphic Questions](polymorphic-questions)           |
 | Web Programming               | Projects    | [Acme Missiles: Falcon-10](acme-website-falcon10)        |
